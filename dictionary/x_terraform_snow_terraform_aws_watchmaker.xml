@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="terraform-aws-watchmaker" max_length="40" name="x_terraform_snow_terraform_aws_watchmaker" type="collection">
+        <element label="AmiDistro" max_length="40" name="amidistor" type="string"/>
+        <element label="AmiId" max_length="40" name="amiid" type="string"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+    </element>
+</database>

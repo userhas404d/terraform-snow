@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="terraform_template" table="x_terraform_snow_terraform_templates">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="region" table="x_terraform_snow_terraform_templates">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
@@ -15,7 +15,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>terraform template</column_label>
+        <column_label>region</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -28,12 +28,12 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>terraform_template</element>
+        <element>region</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <internal_type display_value="">table_name</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <mandatory>false</mandatory>
-        <max_length>80</max_length>
+        <max_length>40</max_length>
         <name>x_terraform_snow_terraform_templates</name>
         <next_element/>
         <primary>false</primary>
@@ -51,16 +51,16 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>adm.taylor.c.mulder</sys_created_by>
-        <sys_created_on>2018-03-06 19:43:14</sys_created_on>
-        <sys_id>4a3aa93374641300777ff5c38bfe81b7</sys_id>
+        <sys_created_on>2018-03-06 19:43:15</sys_created_on>
+        <sys_id>59abbdfb74641300777ff5c38bfe8131</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>terraform template</sys_name>
+        <sys_name>region</sys_name>
         <sys_package display_value="terraform-snow" source="x_terraform_snow">e4a2adf774241300777ff5c38bfe8185</sys_package>
         <sys_policy/>
         <sys_scope display_value="terraform-snow">e4a2adf774241300777ff5c38bfe8185</sys_scope>
-        <sys_update_name>sys_dictionary_x_terraform_snow_terraform_templates_terraform_template</sys_update_name>
+        <sys_update_name>sys_dictionary_x_terraform_snow_terraform_templates_region</sys_update_name>
         <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
-        <sys_updated_on>2018-03-06 19:43:14</sys_updated_on>
+        <sys_updated_on>2018-03-06 19:43:15</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
