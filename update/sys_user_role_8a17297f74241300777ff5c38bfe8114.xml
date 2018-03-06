@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_terraform_snow.terraform_templates_user</name>
+        <suffix>terraform_templates_user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-03-06 18:04:03</sys_created_on>
+        <sys_id>8a17297f74241300777ff5c38bfe8114</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_terraform_snow.terraform_templates_user</sys_name>
+        <sys_package display_value="terraform-snow" source="x_terraform_snow">e4a2adf774241300777ff5c38bfe8185</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="terraform-snow">e4a2adf774241300777ff5c38bfe8185</sys_scope>
+        <sys_update_name>sys_user_role_8a17297f74241300777ff5c38bfe8114</sys_update_name>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-03-06 18:04:03</sys_updated_on>
+    </sys_user_role>
+</record_update>
