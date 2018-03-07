@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_terraform_snow.terraform_aws_watchmaker_vars_user" name="x_terraform_snow.terraform_aws_watchmaker_vars_user">3bf387774f201300de7f4fe18110c78e</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-07 00:49:56</sys_created_on>
+        <sys_id>33f387774f201300de7f4fe18110c790</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>3bf387774f201300de7f4fe18110c78e</sys_name>
+        <sys_package display_value="terraform-snow" source="x_terraform_snow">e4a2adf774241300777ff5c38bfe8185</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="terraform-snow">e4a2adf774241300777ff5c38bfe8185</sys_scope>
+        <sys_update_name>sys_embedded_help_role_33f387774f201300de7f4fe18110c790</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-07 00:49:56</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

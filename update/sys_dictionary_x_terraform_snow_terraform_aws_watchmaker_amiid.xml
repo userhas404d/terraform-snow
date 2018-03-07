@@ -15,7 +15,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>AmiId</column_label>
+        <column_label>Template parameters</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -52,15 +52,15 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>adm.taylor.c.mulder</sys_created_by>
         <sys_created_on>2018-03-06 18:20:36</sys_created_on>
-        <sys_id>17ca617374641300777ff5c38bfe81cb</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>AmiId</sys_name>
+        <sys_id>7cef7eb34f201300de7f4fe18110c7fb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Template parameters</sys_name>
         <sys_package display_value="terraform-snow" source="x_terraform_snow">e4a2adf774241300777ff5c38bfe8185</sys_package>
         <sys_policy/>
         <sys_scope display_value="terraform-snow">e4a2adf774241300777ff5c38bfe8185</sys_scope>
         <sys_update_name>sys_dictionary_x_terraform_snow_terraform_aws_watchmaker_amiid</sys_update_name>
-        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
-        <sys_updated_on>2018-03-06 18:20:36</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-07 00:38:00</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

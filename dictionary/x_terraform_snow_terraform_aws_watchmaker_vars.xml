@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="x_terraform_snow_terraform_aws_watchmaker" label="terraform-aws-watchmaker-vars" max_length="40" name="x_terraform_snow_terraform_aws_watchmaker_vars" type="collection">
+        <element label="AmiDistro" max_length="128" name="amidistro" type="string"/>
+        <element label="cfn stack name" max_length="255" name="cfn_stack_name" type="string_full_utf8"/>
+    </element>
+</database>

@@ -3,9 +3,9 @@
     <wf_element_activity action="INSERT_OR_UPDATE">
         <access>public</access>
         <attributes/>
-        <base_provider display_value="SSH">ebee8be6d7022100dfc260affd610368</base_provider>
+        <base_provider display_value="">ebee8be6d7022100dfc260affd610368</base_provider>
         <category/>
-        <checked_out_by display_value="Taylor Mulder">1a33f4abdd441300777f0a273afe859d</checked_out_by>
+        <checked_out_by display_value="">1a33f4abdd441300777f0a273afe859d</checked_out_by>
         <default_height/>
         <default_width/>
         <description/>
@@ -39,7 +39,7 @@
     <sys_translated_text action="delete_multiple" query="documentkey=9a86b93b74641300777ff5c38bfe81c6"/>
     <wf_versionable action="INSERT_OR_UPDATE">
         <checked_out>2018-03-06 19:12:02</checked_out>
-        <checked_out_by display_value="Taylor Mulder">1a33f4abdd441300777f0a273afe859d</checked_out_by>
+        <checked_out_by display_value="">1a33f4abdd441300777f0a273afe859d</checked_out_by>
         <published>false</published>
         <sys_created_by>adm.taylor.c.mulder</sys_created_by>
         <sys_created_on>2018-03-06 19:12:02</sys_created_on>

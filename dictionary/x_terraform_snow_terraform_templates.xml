@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element label="deployment settings" max_length="40" name="x_terraform_snow_terraform_templates" type="collection">
+    <element label="terraform deployments" max_length="40" name="x_terraform_snow_terraform_templates" type="collection">
         <element label="Aws access key ID" max_length="40" name="aws_access_key_id" type="string"/>
         <element label="Aws secret acces key" max_length="255" name="aws_secret_acces_key" type="password2"/>
         <element label="region" max_length="40" name="region" type="string"/>
