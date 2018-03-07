@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-03-07 14:35:56</sys_created_on>
+        <sys_id>2f01468cc1b01300777fb59649fb904b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_terraform_snow_ssh_drop_test.x_terraform_snow.ssh_drop_test_user</sys_name>
+        <sys_package display_value="terraform-snow" source="x_terraform_snow">e4a2adf774241300777ff5c38bfe8185</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="terraform-snow">e4a2adf774241300777ff5c38bfe8185</sys_scope>
+        <sys_security_acl display_value="x_terraform_snow_ssh_drop_test">6b01068cc1b01300777fb59649fb909a</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_2f01468cc1b01300777fb59649fb904b</sys_update_name>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-03-07 14:35:56</sys_updated_on>
+        <sys_user_role display_value="x_terraform_snow.ssh_drop_test_user" name="x_terraform_snow.ssh_drop_test_user">d301068cc1b01300777fb59649fb9064</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

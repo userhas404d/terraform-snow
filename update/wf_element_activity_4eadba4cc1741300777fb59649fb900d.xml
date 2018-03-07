@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="wf_element_activity">
+    <wf_element_activity action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <attributes/>
+        <base_provider display_value="SSH">ebee8be6d7022100dfc260affd610368</base_provider>
+        <category/>
+        <checked_out_by/>
+        <default_height/>
+        <default_width/>
+        <description/>
+        <image>images/heisenberg_icons/workflow_ie8/provider_ssh.png</image>
+        <input_meta>{"name":"Input","type":"DATA_OBJECT","properties":[{"name":"aws_access_key_id","type":"STRING","mandatory":true},{"name":"aws_secret_acces_key","type":"STRING","mandatory":false},{"name":"region","type":"STRING","mandatory":true,"defaultValue":"us-east-1"},{"name":"target_host","type":"STRING","mandatory":false},{"name":"credentials_tag","type":"STRING","mandatory":false}]}</input_meta>
+        <input_process_script/>
+        <input_transform>{"source":"${activityInput.target_host}","command":"aws configure set aws_access_key_id ${activityInput.aws_access_key_id}\naws configure set aws_secret_access_key ${activityInput.aws_secret_acces_key}\naws configure set default.region ${activityInput.region}\necho \"success\"","directory":"","credential_tag":"${activityInput.credentials_tag}","midCapabilities":"2d20f2760a0006bc095bf17ae4e0d4ee","long_running":"false","must_sudo":"false"}</input_transform>
+        <local_variables>{"name":"Local","type":"DATA_OBJECT","properties":[{"name":"returnCode","type":"STRING"}]}</local_variables>
+        <name>aws-cli-configure</name>
+        <output_meta>{"name":"Output","type":"DATA_OBJECT","properties":[{"name":"contents","type":"STRING"},{"name":"result","type":"STRING"},{"name":"errorMessage","type":"STRING"}]}</output_meta>
+        <output_process_script/>
+        <output_transform>[{"toLink":"activityLocal.returnCode","description":"Execution return code","to":"returnCode","toType":"string","toDestination":"activityLocal","sourceLabel":"executionResult.tags[\"return_code\"]","from":"${executionResult.tags[\"return_code\"]}","fromSource":"executionResult","type":"Direct","children":"[]","translation":""},{"toLink":"activityOutput.contents","description":"","to":"contents","toType":"string","toDestination":"activityOutput","sourceLabel":"executionResult.tags[\"contents\"]","from":"${executionResult.tags[\"contents\"]}","fromSource":"executionResult","type":"Direct","children":"[]","translation":""}]</output_transform>
+        <processing_script/>
+        <sample_payloads>{}</sample_payloads>
+        <short_description/>
+        <style/>
+        <sys_class_name>wf_element_activity</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-03-07 19:00:42</sys_created_on>
+        <sys_id>4eadba4cc1741300777fb59649fb900d</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>aws-cli-configure</sys_name>
+        <sys_package display_value="terraform-snow" source="x_terraform_snow">e4a2adf774241300777ff5c38bfe8185</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="terraform-snow">e4a2adf774241300777ff5c38bfe8185</sys_scope>
+        <sys_update_name>wf_element_activity_4eadba4cc1741300777fb59649fb900d</sys_update_name>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-03-07 20:01:29</sys_updated_on>
+        <version_container_id>4aa63d3b74641300777ff5c38bfe8185</version_container_id>
+    </wf_element_activity>
+    <sys_translated_text action="delete_multiple" query="documentkey=4eadba4cc1741300777fb59649fb900d"/>
+    <wf_versionable action="INSERT_OR_UPDATE">
+        <checked_out/>
+        <checked_out_by/>
+        <published>true</published>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-03-07 19:00:42</sys_created_on>
+        <sys_id>4aadba4cc1741300777fb59649fb900e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-03-07 20:01:29</sys_updated_on>
+        <valid_from>2018-03-07 20:01:29</valid_from>
+        <valid_to/>
+        <version>2</version>
+        <version_container_id>4aa63d3b74641300777ff5c38bfe8185</version_container_id>
+        <wf_element_definition display_value="aws-cli-configure">4eadba4cc1741300777fb59649fb900d</wf_element_definition>
+    </wf_versionable>
+    <wf_condition_default action="INSERT_OR_UPDATE">
+        <activity_definition display_value="aws-cli-configure">4eadba4cc1741300777fb59649fb900d</activity_definition>
+        <condition>activityOutput.result == "success"</condition>
+        <derived_definition/>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <name>Success</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-03-07 19:06:20</sys_created_on>
+        <sys_id>231e728cc1741300777fb59649fb901c</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-03-07 19:28:38</sys_updated_on>
+    </wf_condition_default>
+    <wf_condition_default action="INSERT_OR_UPDATE">
+        <activity_definition display_value="aws-cli-configure">4eadba4cc1741300777fb59649fb900d</activity_definition>
+        <condition/>
+        <derived_definition/>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <name>Failure</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-03-07 19:06:20</sys_created_on>
+        <sys_id>564ef28cc1741300777fb59649fb9060</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-03-07 19:10:45</sys_updated_on>
+    </wf_condition_default>
+    <wf_versionable action="update_multiple" query="version_container_id=4aa63d3b74641300777ff5c38bfe8185^sys_id!=4aadba4cc1741300777fb59649fb900e^version&lt;2">
+        <published>false</published>
+    </wf_versionable>
+    <wf_activity action="update_multiple" is_dot_walk_query="true" query="workflow_version.published=true^activity_definition.version_container_id=4aa63d3b74641300777ff5c38bfe8185">
+        <new_activity_definition>4eadba4cc1741300777fb59649fb900d</new_activity_definition>
+        <out_of_date>true</out_of_date>
+        <notes>There is a newer version of this activity.
+
+To update the activity, check out the workflow, select the activity, right click
+and select 'Update activity' to use the latest version, then publish the workflow</notes>
+    </wf_activity>
+</record_update>
