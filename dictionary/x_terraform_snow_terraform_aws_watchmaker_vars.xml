@@ -2,6 +2,34 @@
 <database>
     <element extends="x_terraform_snow_terraform_aws_watchmaker" label="terraform-aws-watchmaker-vars" max_length="40" name="x_terraform_snow_terraform_aws_watchmaker_vars" type="collection">
         <element label="AmiDistro" max_length="128" name="amidistro" type="string"/>
+        <element label="AppScriptParams" max_length="40" name="appscriptparams" type="string"/>
+        <element label="AppScriptShell" max_length="40" name="appscriptshell" type="string"/>
+        <element label="AppScriptUrl" max_length="40" name="appscripturl" type="string"/>
+        <element label="AppVolumeDevice" max_length="40" name="appvolumedevice" type="string"/>
+        <element label="AppVolumeMountPath" max_length="40" name="appvolumemountpath" type="string"/>
+        <element label=" AppVolumeSize " max_length="40" name="appvolumesize" type="string"/>
+        <element label="AppVolumeType" max_length="40" name="appvolumetype" type="string"/>
+        <element label="CfnBootstrapUtilsUrl" max_length="40" name="cfnbootstraputilsurl" type="string"/>
+        <element label="CfnEndpointUrl" max_length="40" name="cfnendpointurl" type="string"/>
+        <element label="CfnGetPipUrl" max_length="40" name="cfngetpipurl" type="string"/>
         <element label="cfn stack name" max_length="255" name="cfn_stack_name" type="string_full_utf8"/>
+        <element label="InstanceRole" max_length="40" name="instancerole" type="string"/>
+        <element label="InstanceType" max_length="40" name="instancetype" type="string"/>
+        <element label=" KeyPairName" max_length="40" name="keypairname" type="string"/>
+        <element label="NoPublicIp" max_length="40" name="nopublicip" type="string"/>
+        <element label="NoReboot" max_length="40" name="noreboot" type="string"/>
+        <element label="NoUpdates" max_length="40" name="noupdates" type="string"/>
+        <element label="PrivateIp" max_length="40" name="privateip" type="string"/>
+        <element label="PypiIndexUrl" max_length="40" name="pypiindexurl" type="string"/>
+        <element label="SecurityGroupIds" max_length="40" name="securitygroupids" type="string"/>
+        <element label="SubnetId" max_length="40" name="subnetid" type="string"/>
+        <element label="ToggleCfnInitUpdate" max_length="40" name="togglecfninitupdate" type="string"/>
+        <element label="WatchmakerAdminGroups" max_length="40" name="watchmakeradmingroups" type="string"/>
+        <element label="WatchmakerAdminUsers" max_length="40" name="watchmakeradminusers" type="string"/>
+        <element label="WatchmakerComputerName" max_length="40" name="watchmakercomputername" type="string"/>
+        <element label="WatchmakerConfig" max_length="40" name="watchmakerconfig" type="string"/>
+        <element label="WatchmakerEnvironment" max_length="40" name="watchmakerenvironment" type="string"/>
+        <element label="WatchmakerOuPath" max_length="40" name="watchmakeroupath" type="string"/>
+        <element label="WatchmakerS3Source" max_length="40" name="watchmakers3source" type="string"/>
     </element>
 </database>

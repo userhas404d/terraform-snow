@@ -4,6 +4,6 @@
         <element label="Aws access key ID" max_length="40" name="aws_access_key_id" type="string"/>
         <element label="Aws secret acces key" max_length="255" name="aws_secret_acces_key" type="password2"/>
         <element label="region" max_length="40" name="region" type="string"/>
-        <element label="terraform template" max_length="80" name="terraform_template" type="table_name"/>
+        <element label="terraform template" max_length="80" name="terraform_template" reference="x_terraform_snow_terraform_aws_watchmaker" reference_qual="nameISNOTEMPTY^EQ" reference_qual_condition="nameISNOTEMPTY^EQ" type="reference"/>
     </element>
 </database>
