@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="virtualizatio_type" table="x_terraform_snow_approved_amis" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>virtualizatio_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hardware</label>
+            <language>en</language>
+            <name>x_terraform_snow_approved_amis</name>
+            <sequence/>
+            <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+            <sys_created_on>2018-03-09 14:08:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e0ddc4f8c9b01300777f27419cd815f9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+            <sys_updated_on>2018-03-09 14:08:07</sys_updated_on>
+            <value>Hardware</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>virtualizatio_type</element>
+            <name>x_terraform_snow_approved_amis</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+            <sys_created_on>2018-03-09 14:08:07</sys_created_on>
+            <sys_id>2bdd08f8c9b01300777f27419cd81557</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>virtualizatio_type</sys_name>
+            <sys_package display_value="terraform-snow" source="x_terraform_snow">e4a2adf774241300777ff5c38bfe8185</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="terraform-snow">e4a2adf774241300777ff5c38bfe8185</sys_scope>
+            <sys_update_name>sys_choice_x_terraform_snow_approved_amis_virtualizatio_type</sys_update_name>
+            <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+            <sys_updated_on>2018-03-09 14:08:07</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

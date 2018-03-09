@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="operating_system" table="x_terraform_snow_approved_amis" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>operating_system</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>CentOS</label>
+            <language>en</language>
+            <name>x_terraform_snow_approved_amis</name>
+            <sequence/>
+            <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+            <sys_created_on>2018-03-09 14:12:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6ccec43cc9b01300777f27419cd81541</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+            <sys_updated_on>2018-03-09 14:12:15</sys_updated_on>
+            <value>CentOS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>operating_system</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>RHEL</label>
+            <language>en</language>
+            <name>x_terraform_snow_approved_amis</name>
+            <sequence/>
+            <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+            <sys_created_on>2018-03-09 14:12:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>55dec43cc9b01300777f27419cd8157f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+            <sys_updated_on>2018-03-09 14:12:31</sys_updated_on>
+            <value>RHEL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>operating_system</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Windows</label>
+            <language>en</language>
+            <name>x_terraform_snow_approved_amis</name>
+            <sequence/>
+            <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+            <sys_created_on>2018-03-09 14:12:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4bee083cc9b01300777f27419cd8157e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+            <sys_updated_on>2018-03-09 14:12:50</sys_updated_on>
+            <value>Windows</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>operating_system</element>
+            <name>x_terraform_snow_approved_amis</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+            <sys_created_on>2018-03-09 14:12:15</sys_created_on>
+            <sys_id>c0dec43cc9b01300777f27419cd815b7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>operating_system</sys_name>
+            <sys_package display_value="terraform-snow" source="x_terraform_snow">e4a2adf774241300777ff5c38bfe8185</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="terraform-snow">e4a2adf774241300777ff5c38bfe8185</sys_scope>
+            <sys_update_name>sys_choice_x_terraform_snow_approved_amis_operating_system</sys_update_name>
+            <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+            <sys_updated_on>2018-03-09 14:12:15</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>
