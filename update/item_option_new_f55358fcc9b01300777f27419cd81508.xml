@@ -18,10 +18,10 @@
         <do_not_select_first>false</do_not_select_first>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <example_text>Name of the Cloudformation Stack</example_text>
+        <example_text/>
         <field/>
         <global>false</global>
-        <help_tag/>
+        <help_tag>More information</help_tag>
         <help_text/>
         <include_none>false</include_none>
         <instructions/>
@@ -29,26 +29,26 @@
         <list_table/>
         <lookup_label/>
         <lookup_price/>
-        <lookup_table/>
-        <lookup_unique>false</lookup_unique>
-        <lookup_value/>
+        <lookup_table>cmdb_ci_aws_datacenter</lookup_table>
+        <lookup_unique>true</lookup_unique>
+        <lookup_value>region</lookup_value>
         <macro/>
-        <mandatory>true</mandatory>
+        <mandatory>false</mandatory>
         <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>Name</name>
-        <order>100</order>
+        <name>region</name>
+        <order/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
-        <question_text>Name</question_text>
+        <question_text>Region</question_text>
         <read_roles/>
         <rec_lookup_price/>
         <rec_price_if_checked>0</rec_price_if_checked>
         <record/>
         <record_producer_table/>
         <reference/>
-        <reference_qual/>
+        <reference_qual>discovery_statusISNOTEMPTY</reference_qual>
         <reference_qual_condition/>
         <scale_max>5</scale_max>
         <scale_min>0</scale_min>
@@ -58,22 +58,22 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>adm.taylor.c.mulder</sys_created_by>
-        <sys_created_on>2018-03-09 13:47:19</sys_created_on>
-        <sys_id>b5090474c9b01300777f27419cd8159c</sys_id>
-        <sys_mod_count>8</sys_mod_count>
-        <sys_name>Name</sys_name>
+        <sys_created_on>2018-03-09 14:33:41</sys_created_on>
+        <sys_id>f55358fcc9b01300777f27419cd81508</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Region</sys_name>
         <sys_package display_value="terraform-snow" source="x_terraform_snow">e4a2adf774241300777ff5c38bfe8185</sys_package>
         <sys_policy/>
         <sys_scope display_value="terraform-snow">e4a2adf774241300777ff5c38bfe8185</sys_scope>
-        <sys_update_name>item_option_new_b5090474c9b01300777f27419cd8159c</sys_update_name>
+        <sys_update_name>item_option_new_f55358fcc9b01300777f27419cd81508</sys_update_name>
         <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
-        <sys_updated_on>2018-03-09 17:43:15</sys_updated_on>
+        <sys_updated_on>2018-03-09 18:43:34</sys_updated_on>
         <table/>
-        <tooltip>Name of the Cloudformation Stack</tooltip>
-        <type>6</type>
+        <tooltip>select your target region</tooltip>
+        <type>18</type>
         <ui_page/>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
+        <use_reference_qualifier>advanced</use_reference_qualifier>
         <variable_name/>
         <variable_set/>
         <variable_width/>
@@ -84,22 +84,22 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=b5090474c9b01300777f27419cd8159c"/>
-    <fx_price action="delete_multiple" query="id=b5090474c9b01300777f27419cd8159c"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=f55358fcc9b01300777f27419cd81508"/>
+    <fx_price action="delete_multiple" query="id=f55358fcc9b01300777f27419cd81508"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>price_if_checked</field>
-        <id>b5090474c9b01300777f27419cd8159c</id>
+        <id>f55358fcc9b01300777f27419cd81508</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>adm.taylor.c.mulder</sys_created_by>
-        <sys_created_on>2018-03-09 13:47:19</sys_created_on>
-        <sys_id>f2194474c9b01300777f27419cd8154d</sys_id>
+        <sys_created_on>2018-03-09 14:33:41</sys_created_on>
+        <sys_id>4ab3d8fcc9b01300777f27419cd815eb</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
-        <sys_updated_on>2018-03-09 13:47:19</sys_updated_on>
+        <sys_updated_on>2018-03-09 14:33:41</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
@@ -107,16 +107,16 @@
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>rec_price_if_checked</field>
-        <id>b5090474c9b01300777f27419cd8159c</id>
+        <id>f55358fcc9b01300777f27419cd81508</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>adm.taylor.c.mulder</sys_created_by>
-        <sys_created_on>2018-03-09 13:47:19</sys_created_on>
-        <sys_id>ba194474c9b01300777f27419cd8154c</sys_id>
+        <sys_created_on>2018-03-09 14:33:41</sys_created_on>
+        <sys_id>86b3d8fcc9b01300777f27419cd815ea</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
-        <sys_updated_on>2018-03-09 13:47:19</sys_updated_on>
+        <sys_updated_on>2018-03-09 14:33:41</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>

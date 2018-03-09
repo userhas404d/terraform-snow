@@ -2,7 +2,7 @@
 <record_update sys_domain="global" table="sys_ui_module">
     <sys_ui_module action="INSERT_OR_UPDATE">
         <active>true</active>
-        <application display_value="ssh drop test">9b01068cc1b01300777fb59649fb9089</application>
+        <application/>
         <filter/>
         <name>ssh drop tests</name>
         <order/>
