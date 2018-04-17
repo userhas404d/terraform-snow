@@ -3,7 +3,7 @@
     <item_option_new action="INSERT_OR_UPDATE">
         <active>true</active>
         <attributes/>
-        <cat_item display_value="My Test Template">9ed813d408f01300777f3caf10548ed7</cat_item>
+        <cat_item/>
         <category/>
         <choice_direction>down</choice_direction>
         <choice_field/>

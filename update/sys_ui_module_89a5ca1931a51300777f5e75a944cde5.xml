@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="REST Credentials">89a5ca1931a51300777f5e75a944cde3</application>
+        <filter/>
+        <name>REST Credentials</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_terraform_snow.rest_credentials_user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 18:55:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>89a5ca1931a51300777f5e75a944cde5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>REST Credentials</sys_name>
+        <sys_package display_value="terraform-snow" source="x_terraform_snow">e4a2adf774241300777ff5c38bfe8185</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="terraform-snow">e4a2adf774241300777ff5c38bfe8185</sys_scope>
+        <sys_update_name>sys_ui_module_89a5ca1931a51300777f5e75a944cde5</sys_update_name>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 18:55:28</sys_updated_on>
+        <table>x_terraform_snow_rest_credentials</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+</record_update>

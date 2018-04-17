@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update table="sc_cat_item_catalog">
     <sc_cat_item_catalog action="INSERT_OR_UPDATE">
-        <sc_cat_item display_value="My Test Template">9ed813d408f01300777f3caf10548ed7</sc_cat_item>
-        <sc_catalog display_value="Terraform Resources_application">39a813d408f01300777f3caf10548e05</sc_catalog>
+        <sc_cat_item display_value="New Terraform Resource">ae8ced9131651300777f5e75a944cd24</sc_cat_item>
+        <sc_catalog display_value="Terraform Resources  Scoped App">39a813d408f01300777f3caf10548e05</sc_catalog>
         <sys_class_name>sc_cat_item_catalog</sys_class_name>
         <sys_created_by>adm.taylor.c.mulder</sys_created_by>
-        <sys_created_on>2018-03-08 15:40:43</sys_created_on>
-        <sys_id>1a791bd408f01300777f3caf10548e91</sys_id>
+        <sys_created_on>2018-04-17 17:06:57</sys_created_on>
+        <sys_id>5bcc25d131651300777f5e75a944cdf4</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Terraform Resources.My Test Template</sys_name>
+        <sys_name>Terraform Resources  Scoped App.New Terraform Resource</sys_name>
         <sys_package display_value="terraform-snow" source="x_terraform_snow">e4a2adf774241300777ff5c38bfe8185</sys_package>
         <sys_policy/>
         <sys_scope display_value="terraform-snow">e4a2adf774241300777ff5c38bfe8185</sys_scope>
-        <sys_update_name>sc_cat_item_catalog_1a791bd408f01300777f3caf10548e91</sys_update_name>
+        <sys_update_name>sc_cat_item_catalog_5bcc25d131651300777f5e75a944cdf4</sys_update_name>
         <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
-        <sys_updated_on>2018-03-08 15:40:43</sys_updated_on>
+        <sys_updated_on>2018-04-17 17:06:57</sys_updated_on>
     </sc_cat_item_catalog>
 </record_update>

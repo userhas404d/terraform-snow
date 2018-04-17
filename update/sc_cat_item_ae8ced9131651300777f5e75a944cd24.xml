@@ -4,13 +4,28 @@
         <active>true</active>
         <availability>on_desktop</availability>
         <billable>false</billable>
-        <category display_value="Watchmaker">b33997d408f01300777f3caf10548e56</category>
+        <category display_value="Templates">2feb255131651300777f5e75a944cdbd</category>
         <cost>0</cost>
         <custom_cart/>
         <delivery_plan/>
         <delivery_plan_script/>
         <delivery_time>1970-01-03 00:00:00</delivery_time>
-        <description><![CDATA[<p><span style="color: #24292e; font-family: -apple-system, system-ui, &#39;Segoe UI&#39;, Helvetica, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; font-size: 16px;">This module utilizes the Terraform Cloudformation data source in conjunction with an AWS Cloudformation template to deploy a Watchmaker Linux instance</span></p>]]></description>
+        <description><![CDATA[<h2>Tutorial:</h2>
+<ol style="list-style-position: inside;"><li>Ensure your terraform template is configured in the correct format.</li><li>Attach your terraform template as a zip file to this request.</li><li>Complete the rest of the form using your template characteristics as a guide</li><li>Click the Order Now button</li></ol>
+<h2>Required Terraform Template format:</h2>
+<p>limitations: </p>
+<div>Drop downs:</div>
+<div> </div>
+<div>in order for the drop downs to function properly the following terraform variable naming convention is required.</div>
+<div> 
+<table style="height: 144px;" width="555"><tbody><tr><td><strong> Variable Name</strong></td><td><strong> Dropdown Values</strong></td></tr><tr><td> AmiId</td><td> AMI IDs of RHEL7, CENTOS, and Windows images from the last 60 days</td></tr><tr><td> AmiDistro</td><td> RHEL7, CENTOS, and Windows</td></tr><tr><td> KeyPairName</td><td> List of keys in the user&#39;s AWS account</td></tr><tr><td> SecurityGroupIds</td><td> List of Security groups in the user&#39;s AWS account</td></tr><tr><td> SubnetId</td><td> List of subnets in the user&#39;s AWS account</td></tr></tbody></table>
+</div>
+<div> </div>
+<div> </div>
+<div>prerequisites: </div>
+<h2>Background Process Overview:</h2>
+<ol style="list-style-position: inside;"><li>template is downloaded and assessed for correct formatting</li><li>catalog item is created with provided description</li><li>template variables are converted to ServiceNow format and attached to the catalog item</li></ol>
+<p> </p>]]></description>
         <entitlement_script/>
         <group/>
         <icon/>
@@ -23,7 +38,7 @@
         <mobile_picture/>
         <mobile_picture_type>use_desktop_picture</mobile_picture_type>
         <model/>
-        <name>lx-instance</name>
+        <name>New Terraform Resource</name>
         <no_cart>false</no_cart>
         <no_order>false</no_order>
         <no_order_now>false</no_order_now>
@@ -34,7 +49,7 @@
         <order>0</order>
         <ordered_item_link/>
         <picture/>
-        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=22f70434c9b01300777f27419cd81574&amp;sysparm_preview=true", "summary");</preview>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=ae8ced9131651300777f5e75a944cd24&amp;sysparm_preview=true", "summary");</preview>
         <price>0</price>
         <recurring_frequency/>
         <recurring_price>0</recurring_price>
@@ -42,21 +57,21 @@
         <sc_catalogs>39a813d408f01300777f3caf10548e05</sc_catalogs>
         <sc_ic_item_staging/>
         <sc_ic_version/>
-        <short_description>Watchamker Linux Instance</short_description>
+        <short_description>Attach your terraform template to create a new terraform resouroce.</short_description>
         <show_variable_help_on_load>false</show_variable_help_on_load>
         <start_closed>false</start_closed>
         <sys_class_name>sc_cat_item</sys_class_name>
         <sys_created_by>adm.taylor.c.mulder</sys_created_by>
-        <sys_created_on>2018-03-09 13:44:36</sys_created_on>
-        <sys_id>22f70434c9b01300777f27419cd81574</sys_id>
+        <sys_created_on>2018-04-17 17:06:57</sys_created_on>
+        <sys_id>ae8ced9131651300777f5e75a944cd24</sys_id>
         <sys_mod_count>2</sys_mod_count>
-        <sys_name>lx-instance</sys_name>
+        <sys_name>New Terraform Resource</sys_name>
         <sys_package display_value="terraform-snow" source="x_terraform_snow">e4a2adf774241300777ff5c38bfe8185</sys_package>
         <sys_policy/>
         <sys_scope display_value="terraform-snow">e4a2adf774241300777ff5c38bfe8185</sys_scope>
-        <sys_update_name>sc_cat_item_22f70434c9b01300777f27419cd81574</sys_update_name>
+        <sys_update_name>sc_cat_item_ae8ced9131651300777f5e75a944cd24</sys_update_name>
         <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
-        <sys_updated_on>2018-03-09 13:45:08</sys_updated_on>
+        <sys_updated_on>2018-04-17 17:55:16</sys_updated_on>
         <template/>
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
@@ -64,24 +79,24 @@
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
         <visible_standalone>true</visible_standalone>
-        <workflow/>
+        <workflow display_value="terraform catalog item creation - scoped">607379d531651300777f5e75a944cde1</workflow>
     </sc_cat_item>
-    <sys_translated_text action="delete_multiple" query="documentkey=22f70434c9b01300777f27419cd81574"/>
-    <fx_price action="delete_multiple" query="id=22f70434c9b01300777f27419cd81574"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=ae8ced9131651300777f5e75a944cd24"/>
+    <fx_price action="delete_multiple" query="id=ae8ced9131651300777f5e75a944cd24"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>price</field>
-        <id>22f70434c9b01300777f27419cd81574</id>
+        <id>ae8ced9131651300777f5e75a944cd24</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>adm.taylor.c.mulder</sys_created_by>
-        <sys_created_on>2018-03-09 13:44:36</sys_created_on>
-        <sys_id>43780c34c9b01300777f27419cd815a2</sys_id>
+        <sys_created_on>2018-04-17 17:06:57</sys_created_on>
+        <sys_id>97cc25d131651300777f5e75a944cd8e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
-        <sys_updated_on>2018-03-09 13:44:36</sys_updated_on>
+        <sys_updated_on>2018-04-17 17:06:57</sys_updated_on>
         <table>sc_cat_item</table>
         <type>calculated</type>
     </fx_price>
@@ -89,16 +104,16 @@
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>recurring_price</field>
-        <id>22f70434c9b01300777f27419cd81574</id>
+        <id>ae8ced9131651300777f5e75a944cd24</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>adm.taylor.c.mulder</sys_created_by>
-        <sys_created_on>2018-03-09 13:44:36</sys_created_on>
-        <sys_id>87780c34c9b01300777f27419cd815a3</sys_id>
+        <sys_created_on>2018-04-17 17:06:57</sys_created_on>
+        <sys_id>57cc25d131651300777f5e75a944cd8f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
-        <sys_updated_on>2018-03-09 13:44:36</sys_updated_on>
+        <sys_updated_on>2018-04-17 17:06:57</sys_updated_on>
         <table>sc_cat_item</table>
         <type>calculated</type>
     </fx_price>

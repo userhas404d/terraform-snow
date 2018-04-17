@@ -17,7 +17,7 @@
         <order>0</order>
         <parent/>
         <roles/>
-        <sc_catalog display_value="Terraform Resources_application">39a813d408f01300777f3caf10548e05</sc_catalog>
+        <sc_catalog display_value="Terraform Resources  Scoped App">39a813d408f01300777f3caf10548e05</sc_catalog>
         <show_in_cms>false</show_in_cms>
         <sys_class_name>sc_category</sys_class_name>
         <sys_created_by>adm.taylor.c.mulder</sys_created_by>

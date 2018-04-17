@@ -6,7 +6,7 @@
         <assessment/>
         <content_page/>
         <device_type/>
-        <filter table="sc_cat_item_catalog">sc_catalog=39a813d408f01300777f3caf10548e05^EQ<item display_table="sc_catalog" display_value="Terraform Resources_application" endquery="false" field="sc_catalog" goto="false" newquery="false" operator="=" or="false" value="39a813d408f01300777f3caf10548e05"/>
+        <filter table="sc_cat_item_catalog">sc_catalog=39a813d408f01300777f3caf10548e05^EQ<item display_table="sc_catalog" display_value="Terraform Resources  Scoped App" endquery="false" field="sc_catalog" goto="false" newquery="false" operator="=" or="false" value="39a813d408f01300777f3caf10548e05"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter>
         <hint/>

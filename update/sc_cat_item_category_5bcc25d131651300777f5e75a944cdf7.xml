@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update table="sc_cat_item_category">
     <sc_cat_item_category action="INSERT_OR_UPDATE">
-        <sc_cat_item display_value="My Test Template">9ed813d408f01300777f3caf10548ed7</sc_cat_item>
-        <sc_category display_value="Watchmaker">b33997d408f01300777f3caf10548e56</sc_category>
+        <sc_cat_item display_value="New Terraform Resource">ae8ced9131651300777f5e75a944cd24</sc_cat_item>
+        <sc_category display_value="Templates">2feb255131651300777f5e75a944cdbd</sc_category>
         <sys_class_name>sc_cat_item_category</sys_class_name>
         <sys_created_by>adm.taylor.c.mulder</sys_created_by>
-        <sys_created_on>2018-03-08 15:40:43</sys_created_on>
-        <sys_id>9a791bd408f01300777f3caf10548e94</sys_id>
+        <sys_created_on>2018-04-17 17:06:58</sys_created_on>
+        <sys_id>5bcc25d131651300777f5e75a944cdf7</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Watchmaker.My Test Template</sys_name>
+        <sys_name>Templates.New Terraform Resource</sys_name>
         <sys_package display_value="terraform-snow" source="x_terraform_snow">e4a2adf774241300777ff5c38bfe8185</sys_package>
         <sys_policy/>
         <sys_scope display_value="terraform-snow">e4a2adf774241300777ff5c38bfe8185</sys_scope>
-        <sys_update_name>sc_cat_item_category_9a791bd408f01300777f3caf10548e94</sys_update_name>
+        <sys_update_name>sc_cat_item_category_5bcc25d131651300777f5e75a944cdf7</sys_update_name>
         <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
-        <sys_updated_on>2018-03-08 15:40:43</sys_updated_on>
+        <sys_updated_on>2018-04-17 17:06:58</sys_updated_on>
     </sc_cat_item_category>
 </record_update>
