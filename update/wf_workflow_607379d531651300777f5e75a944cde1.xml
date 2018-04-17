@@ -1,0 +1,1824 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"activities":{},"subflows":[],"stages":{},"ends":["ac7379d531651300777f5e75a944cde2"]}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Requested item renderer">2acd1c538f111200d95374f137bdee20</column_renderer>
+        <condition/>
+        <condition_type/>
+        <description>Creates a Terraform Catalog item provided the associated RITM that initiated the workflow has a terraform template attached</description>
+        <expected_sequences>e87379d531651300777f5e75a944cde1,93547d1931651300777f5e75a944cdb2,2384315931651300777f5e75a944cd07,0ea4715931651300777f5e75a944cdb2,69f4355931651300777f5e75a944cda5,7345395931651300777f5e75a944cd69,89a53d5931651300777f5e75a944cd4a,3806759931651300777f5e75a944cdec,1626399931651300777f5e75a944cdf7,b746bd9931651300777f5e75a944cde1,12b6f1d931651300777f5e75a944cd2b,ac7379d531651300777f5e75a944cde2</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>e87379d531651300777f5e75a944cde1,93547d1931651300777f5e75a944cdb2,2384315931651300777f5e75a944cd07,0ea4715931651300777f5e75a944cdb2,69f4355931651300777f5e75a944cda5,5d25b55931651300777f5e75a944cdd4,7345395931651300777f5e75a944cd69,ac7379d531651300777f5e75a944cde2,89a53d5931651300777f5e75a944cd4a,edc57d5931651300777f5e75a944cd18,3806759931651300777f5e75a944cdec,1626399931651300777f5e75a944cdf7,b746bd9931651300777f5e75a944cde1,12b6f1d931651300777f5e75a944cd2b,9f9671d931651300777f5e75a944cde0,a2d675d931651300777f5e75a944cd4e,9d1739d931651300777f5e75a944cd03,2f6779d931651300777f5e75a944cdf8,4c973dd931651300777f5e75a944cd37</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>terraform catalog item creation - scoped</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration/>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field>stage</stage_field>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">e87379d531651300777f5e75a944cde1</start>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:35:59</sys_created_on>
+        <sys_id>34327d9531651300777f5e75a944cda5</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 20:15:43</sys_updated_on>
+        <table>sc_req_item</table>
+        <timezone/>
+        <validated>false</validated>
+        <workflow display_value="terraform catalog item creation - scoped">607379d531651300777f5e75a944cde1</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description>Creates a Terraform Catalog item provided the associated RITM that initiated the workflow has a terraform template attached</description>
+        <name>terraform catalog item creation - scoped</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:35:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>607379d531651300777f5e75a944cde1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>terraform catalog item creation - scoped</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="terraform-snow" source="x_terraform_snow">e4a2adf774241300777ff5c38bfe8185</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="terraform-snow">e4a2adf774241300777ff5c38bfe8185</sys_scope>
+        <sys_update_name>wf_workflow_607379d531651300777f5e75a944cde1</sys_update_name>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 20:15:43</sys_updated_on>
+        <table>sc_req_item</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Retrieve Attachment</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:37:51</sys_created_on>
+        <sys_id>28a3f11931651300777f5e75a944cdc1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:37:51</sys_updated_on>
+        <value/>
+        <workflow_version display_value="terraform catalog item creation - scoped">34327d9531651300777f5e75a944cda5</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Create Catalog Item</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>200</order>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:37:51</sys_created_on>
+        <sys_id>35a3f11931651300777f5e75a944cdf8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:37:51</sys_updated_on>
+        <value/>
+        <workflow_version display_value="terraform catalog item creation - scoped">34327d9531651300777f5e75a944cda5</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>S3 Upload</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>400</order>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:37:51</sys_created_on>
+        <sys_id>7cc3f11931651300777f5e75a944cdd8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:37:51</sys_updated_on>
+        <value/>
+        <workflow_version display_value="terraform catalog item creation - scoped">34327d9531651300777f5e75a944cda5</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Cleanup</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>500</order>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:37:51</sys_created_on>
+        <sys_id>7fc3351931651300777f5e75a944cd92</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:37:51</sys_updated_on>
+        <value/>
+        <workflow_version display_value="terraform catalog item creation - scoped">34327d9531651300777f5e75a944cda5</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Populate Variables</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>300</order>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:37:51</sys_created_on>
+        <sys_id>c8b3351931651300777f5e75a944cd40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:37:51</sys_updated_on>
+        <value/>
+        <workflow_version display_value="terraform catalog item creation - scoped">34327d9531651300777f5e75a944cda5</workflow_version>
+    </wf_stage>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:35:59</sys_created_on>
+        <sys_id>e87379d531651300777f5e75a944cde1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:35:59</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="terraform catalog item creation - scoped">34327d9531651300777f5e75a944cda5</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=e87379d531651300777f5e75a944cde1"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">e87379d531651300777f5e75a944cde1</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:35:59</sys_created_on>
+        <sys_id>a47379d531651300777f5e75a944cde2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:35:59</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="invoke terrasnow cleanup">47e44ab23c051300777f303d41dedec8</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>19</databus_lookup_id>
+        <height/>
+        <input>{"target_host":"${workflow.scratchpad.target_host}","zip_full_path":"${data.get(13).zip_full_path}"}</input>
+        <is_parent>false</is_parent>
+        <name>Cleanup</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Cleanup">7fc3351931651300777f5e75a944cd92</stage>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:54:20</sys_created_on>
+        <sys_id>4c973dd931651300777f5e75a944cd37</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 18:04:46</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="terraform catalog item creation - scoped">34327d9531651300777f5e75a944cda5</workflow_version>
+        <x>259</x>
+        <y>624</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=4c973dd931651300777f5e75a944cd37"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Cleanup">4c973dd931651300777f5e75a944cd37</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:54:20</sys_created_on>
+        <sys_id>d5a7bdd931651300777f5e75a944cd1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:54:20</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="invoke terrasnow unzip and create vars">acdf688941a51300777f9cea6b847668</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>13</databus_lookup_id>
+        <height/>
+        <input>{"target_host":"${workflow.scratchpad.target_host}","user_name":"${workflow.scratchpad.user_name}","user_pwd":"${workflow.scratchpad.user_pwd}","file_name":"${workflow.scratchpad.fileName}","cat_sys_id":"${data.get(8).cat_sys_id}","os_type":"${workflow.scratchpad.os_toggle}","RITM_attachment_sys_id":"${workflow.scratchpad.attachmentSysId}"}</input>
+        <is_parent>false</is_parent>
+        <name>Create Cat item vars</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Populate Variables">c8b3351931651300777f5e75a944cd40</stage>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:49:24</sys_created_on>
+        <sys_id>b746bd9931651300777f5e75a944cde1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 18:18:20</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="terraform catalog item creation - scoped">34327d9531651300777f5e75a944cda5</workflow_version>
+        <x>654</x>
+        <y>261</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=b746bd9931651300777f5e75a944cde1"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Create Cat item vars">b746bd9931651300777f5e75a944cde1</activity>
+        <condition/>
+        <condition_default display_value="Failure">28df688941a51300777f9cea6b84766b</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>true</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Failure</name>
+        <order>1</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:49:24</sys_created_on>
+        <sys_id>4d8671d931651300777f5e75a944cd9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:49:24</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Create Cat item vars">b746bd9931651300777f5e75a944cde1</activity>
+        <condition>activityOutput.zip_full_path != 'ERROR'</condition>
+        <condition_default display_value="Success">6cdf688941a51300777f9cea6b84766a</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Success</name>
+        <order>1</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:49:24</sys_created_on>
+        <sys_id>cd8671d931651300777f5e75a944cd9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:49:24</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="invoke terrasnow create cat item">ee24eddd14491300777f485e246f96ed</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>8</databus_lookup_id>
+        <height/>
+        <input>{"user_name":"${workflow.scratchpad.user_name}","user_pwd":"${workflow.scratchpad.user_pwd}","table_name":"${workflow.scratchpad.table_name}","sys_id":"${workflow.scratchpad.sys_id}","cat_item_name":"${workflow.scratchpad.catalog_item_name}","cat_item_description":"${workflow.scratchpad.catalog_item_description}","target_host":"${workflow.scratchpad.target_host}"}</input>
+        <is_parent>false</is_parent>
+        <name>Create Catalog Item</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Create Catalog Item">35a3f11931651300777f5e75a944cdf8</stage>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:45:00</sys_created_on>
+        <sys_id>7345395931651300777f5e75a944cd69</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:45:17</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="terraform catalog item creation - scoped">34327d9531651300777f5e75a944cda5</workflow_version>
+        <x>14</x>
+        <y>277</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=7345395931651300777f5e75a944cd69"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Create Catalog Item">7345395931651300777f5e75a944cd69</activity>
+        <condition/>
+        <condition_default display_value="Failure">f6eb909a41891300777fded0d5716983</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>true</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Failure</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:45:00</sys_created_on>
+        <sys_id>3885f95931651300777f5e75a944cd16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:45:00</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Create Catalog Item">7345395931651300777f5e75a944cd69</activity>
+        <condition>activityOutput.cat_sys_id != 'ERROR: sys_id not found in response.'</condition>
+        <condition_default display_value="Success">d37b50d641891300777fded0d5716904</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Success</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:45:00</sys_created_on>
+        <sys_id>b485f95931651300777f5e75a944cd16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:45:00</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:35:59</sys_created_on>
+        <sys_id>ac7379d531651300777f5e75a944cde2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:46:55</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="terraform catalog item creation - scoped">34327d9531651300777f5e75a944cda5</workflow_version>
+        <x>1333</x>
+        <y>512</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=ac7379d531651300777f5e75a944cde2"/>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Log Message">396807940a0a0b5c00afd9f67d9fd7a2</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>12</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Log attachment sysid</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Create Catalog Item">35a3f11931651300777f5e75a944cdf8</stage>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:48:02</sys_created_on>
+        <sys_id>1626399931651300777f5e75a944cdf7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:48:05</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="terraform catalog item creation - scoped">34327d9531651300777f5e75a944cda5</workflow_version>
+        <x>441</x>
+        <y>366</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=1626399931651300777f5e75a944cdf7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1626399931651300777f5e75a944cdf7</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:48:02</sys_created_on>
+        <sys_id>8d363d9931651300777f5e75a944cdae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:48:02</sys_updated_on>
+        <value>File Name: ${workflow.scratchpad.fileName}, attachment sysid: ${workflow.scratchpad.attachmentSysId}</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1626399931651300777f5e75a944cdf7</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:48:02</sys_created_on>
+        <sys_id>8d363d9931651300777f5e75a944cdae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:48:02</sys_updated_on>
+        <value>File Name: ${workflow.scratchpad.fileName}, attachment sysid: ${workflow.scratchpad.attachmentSysId}</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Log attachment sysid">1626399931651300777f5e75a944cdf7</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:48:02</sys_created_on>
+        <sys_id>c1363d9931651300777f5e75a944cdaf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:48:02</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Log Message">396807940a0a0b5c00afd9f67d9fd7a2</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>15</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Log Failure</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Populate Variables">c8b3351931651300777f5e75a944cd40</stage>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:50:27</sys_created_on>
+        <sys_id>12b6f1d931651300777f5e75a944cd2b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 18:02:43</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="terraform catalog item creation - scoped">34327d9531651300777f5e75a944cda5</workflow_version>
+        <x>862</x>
+        <y>360</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=12b6f1d931651300777f5e75a944cd2b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>12b6f1d931651300777f5e75a944cd2b</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:50:27</sys_created_on>
+        <sys_id>54c635d931651300777f5e75a944cd4a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 18:02:43</sys_updated_on>
+        <value>unzip and create vars failed. output: ${data.get(13).zip_full_path}</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>12b6f1d931651300777f5e75a944cd2b</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:50:27</sys_created_on>
+        <sys_id>54c635d931651300777f5e75a944cd4a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 18:02:43</sys_updated_on>
+        <value>unzip and create vars failed. output: ${data.get(13).zip_full_path}</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Log Failure">12b6f1d931651300777f5e75a944cd2b</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:50:27</sys_created_on>
+        <sys_id>a8c635d931651300777f5e75a944cd4a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:50:27</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Log Message">396807940a0a0b5c00afd9f67d9fd7a2</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>7</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Log Failure</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Retrieve Attachment">28a3f11931651300777f5e75a944cdc1</stage>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:43:32</sys_created_on>
+        <sys_id>5d25b55931651300777f5e75a944cdd4</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 18:00:38</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="terraform catalog item creation - scoped">34327d9531651300777f5e75a944cda5</workflow_version>
+        <x>749</x>
+        <y>143</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=5d25b55931651300777f5e75a944cdd4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5d25b55931651300777f5e75a944cdd4</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:43:32</sys_created_on>
+        <sys_id>c325f55931651300777f5e75a944cd19</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 18:00:38</sys_updated_on>
+        <value>get attachment failed. output: ${data.get(5).file_name}</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5d25b55931651300777f5e75a944cdd4</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:43:32</sys_created_on>
+        <sys_id>c325f55931651300777f5e75a944cd19</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 18:00:38</sys_updated_on>
+        <value>get attachment failed. output: ${data.get(5).file_name}</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Log Failure">5d25b55931651300777f5e75a944cdd4</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:43:32</sys_created_on>
+        <sys_id>0b25f55931651300777f5e75a944cd19</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:43:32</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Log Message">396807940a0a0b5c00afd9f67d9fd7a2</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>10</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Log Failure</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Create Catalog Item">35a3f11931651300777f5e75a944cdf8</stage>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:46:16</sys_created_on>
+        <sys_id>edc57d5931651300777f5e75a944cd18</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 18:01:23</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="terraform catalog item creation - scoped">34327d9531651300777f5e75a944cda5</workflow_version>
+        <x>258</x>
+        <y>436</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=edc57d5931651300777f5e75a944cd18"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>edc57d5931651300777f5e75a944cd18</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:46:16</sys_created_on>
+        <sys_id>dbc57d5931651300777f5e75a944cdde</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 18:01:23</sys_updated_on>
+        <value>Create cat item failed: output: ${data.get(8).cat_sys_id}</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>edc57d5931651300777f5e75a944cd18</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:46:16</sys_created_on>
+        <sys_id>dbc57d5931651300777f5e75a944cdde</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 18:01:23</sys_updated_on>
+        <value>Create cat item failed: output: ${data.get(8).cat_sys_id}</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Log Failure">edc57d5931651300777f5e75a944cd18</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:46:16</sys_created_on>
+        <sys_id>13c57d5931651300777f5e75a944cddf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:46:16</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Log Message">396807940a0a0b5c00afd9f67d9fd7a2</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>18</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Log status</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="S3 Upload">7cc3f11931651300777f5e75a944cdd8</stage>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:53:32</sys_created_on>
+        <sys_id>2f6779d931651300777f5e75a944cdf8</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 18:04:27</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="terraform catalog item creation - scoped">34327d9531651300777f5e75a944cda5</workflow_version>
+        <x>46</x>
+        <y>727</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=2f6779d931651300777f5e75a944cdf8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>2f6779d931651300777f5e75a944cdf8</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:53:32</sys_created_on>
+        <sys_id>e177f9d931651300777f5e75a944cd90</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 18:04:27</sys_updated_on>
+        <value>upload status: ${data.get(17).upload_status}</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>2f6779d931651300777f5e75a944cdf8</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:53:32</sys_created_on>
+        <sys_id>e177f9d931651300777f5e75a944cd90</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 18:04:27</sys_updated_on>
+        <value>upload status: ${data.get(17).upload_status}</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Log status">2f6779d931651300777f5e75a944cdf8</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:53:32</sys_created_on>
+        <sys_id>2977f9d931651300777f5e75a944cd90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:53:32</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Log Message">396807940a0a0b5c00afd9f67d9fd7a2</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>6</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Log Success</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Retrieve Attachment">28a3f11931651300777f5e75a944cdc1</stage>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:42:45</sys_created_on>
+        <sys_id>69f4355931651300777f5e75a944cda5</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 18:00:26</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="terraform catalog item creation - scoped">34327d9531651300777f5e75a944cda5</workflow_version>
+        <x>739</x>
+        <y>30</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=69f4355931651300777f5e75a944cda5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>69f4355931651300777f5e75a944cda5</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:42:45</sys_created_on>
+        <sys_id>ebf4755931651300777f5e75a944cd5c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 18:00:24</sys_updated_on>
+        <value>get attachment succeeded. file name: ${data.get(5).file_name}</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>69f4355931651300777f5e75a944cda5</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:42:45</sys_created_on>
+        <sys_id>ebf4755931651300777f5e75a944cd5c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 18:00:24</sys_updated_on>
+        <value>get attachment succeeded. file name: ${data.get(5).file_name}</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Log Success">69f4355931651300777f5e75a944cda5</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:42:45</sys_created_on>
+        <sys_id>23f4755931651300777f5e75a944cd5d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:42:45</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Log Message">396807940a0a0b5c00afd9f67d9fd7a2</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>9</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Log Success</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Create Catalog Item">35a3f11931651300777f5e75a944cdf8</stage>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:45:45</sys_created_on>
+        <sys_id>89a53d5931651300777f5e75a944cd4a</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 18:01:13</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="terraform catalog item creation - scoped">34327d9531651300777f5e75a944cda5</workflow_version>
+        <x>225</x>
+        <y>266</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=89a53d5931651300777f5e75a944cd4a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>89a53d5931651300777f5e75a944cd4a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:45:45</sys_created_on>
+        <sys_id>2fa53d5931651300777f5e75a944cdcc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 18:01:13</sys_updated_on>
+        <value>Create cat item succeeded. output: ${data.get(8).cat_sys_id}</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>89a53d5931651300777f5e75a944cd4a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:45:45</sys_created_on>
+        <sys_id>2fa53d5931651300777f5e75a944cdcc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 18:01:13</sys_updated_on>
+        <value>Create cat item succeeded. output: ${data.get(8).cat_sys_id}</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Log Success">89a53d5931651300777f5e75a944cd4a</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:45:45</sys_created_on>
+        <sys_id>63a53d5931651300777f5e75a944cdcd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:45:45</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Log Message">396807940a0a0b5c00afd9f67d9fd7a2</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>14</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Log Success</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Populate Variables">c8b3351931651300777f5e75a944cd40</stage>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:50:02</sys_created_on>
+        <sys_id>9f9671d931651300777f5e75a944cde0</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 18:02:32</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="terraform catalog item creation - scoped">34327d9531651300777f5e75a944cda5</workflow_version>
+        <x>860</x>
+        <y>263</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=9f9671d931651300777f5e75a944cde0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>9f9671d931651300777f5e75a944cde0</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:50:02</sys_created_on>
+        <sys_id>dea6f1d931651300777f5e75a944cd29</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 18:02:32</sys_updated_on>
+        <value>unzip and create vars succeeded: zip full path: ${data.get(13).zip_full_path}</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>9f9671d931651300777f5e75a944cde0</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:50:02</sys_created_on>
+        <sys_id>dea6f1d931651300777f5e75a944cd29</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 18:02:32</sys_updated_on>
+        <value>unzip and create vars succeeded: zip full path: ${data.get(13).zip_full_path}</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Log Success">9f9671d931651300777f5e75a944cde0</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:50:02</sys_created_on>
+        <sys_id>16a6f1d931651300777f5e75a944cd2a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:50:02</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Log Message">396807940a0a0b5c00afd9f67d9fd7a2</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>4</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Log Variables</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:40:56</sys_created_on>
+        <sys_id>2384315931651300777f5e75a944cd07</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:41:00</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="terraform catalog item creation - scoped">34327d9531651300777f5e75a944cda5</workflow_version>
+        <x>320</x>
+        <y>26</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=2384315931651300777f5e75a944cd07"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>2384315931651300777f5e75a944cd07</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:40:56</sys_created_on>
+        <sys_id>c194315931651300777f5e75a944cd20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:40:56</sys_updated_on>
+        <value>sys_id: ${workflow.scratchpad.sys_id}  table_name: ${workflow.scratchpad.table_name} cat_name: ${workflow.scratchpad.catalog_item_name} cat_desc: ${workflow.scratchpad.catalog_item_description}</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>2384315931651300777f5e75a944cd07</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:40:56</sys_created_on>
+        <sys_id>c194315931651300777f5e75a944cd20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:40:56</sys_updated_on>
+        <value>sys_id: ${workflow.scratchpad.sys_id}  table_name: ${workflow.scratchpad.table_name} cat_name: ${workflow.scratchpad.catalog_item_name} cat_desc: ${workflow.scratchpad.catalog_item_description}</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Log Variables">2384315931651300777f5e75a944cd07</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:40:56</sys_created_on>
+        <sys_id>8994315931651300777f5e75a944cd20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:40:56</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="invoke terrasnow get attachment">375eedc5412d1300777f9cea6b84768b</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>5</databus_lookup_id>
+        <height/>
+        <input>{"user_name":"${workflow.scratchpad.user_name}","user_pwd":"${workflow.scratchpad.user_pwd}","table_name":"${workflow.scratchpad.table_name}","table_sys_id":"${workflow.scratchpad.sys_id}","target_host":"${workflow.scratchpad.target_host}","attachment_sys_id":"","file_name":""}</input>
+        <is_parent>false</is_parent>
+        <name>Retrieve Attachment</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Retrieve Attachment">28a3f11931651300777f5e75a944cdc1</stage>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:41:58</sys_created_on>
+        <sys_id>0ea4715931651300777f5e75a944cdb2</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:42:56</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="terraform catalog item creation - scoped">34327d9531651300777f5e75a944cda5</workflow_version>
+        <x>513</x>
+        <y>24</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=0ea4715931651300777f5e75a944cdb2"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Retrieve Attachment">0ea4715931651300777f5e75a944cdb2</activity>
+        <condition/>
+        <condition_default display_value="Failure">fb5e2109412d1300777f9cea6b847609</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>true</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Failure</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:41:58</sys_created_on>
+        <sys_id>84d4f15931651300777f5e75a944cd13</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:41:58</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Retrieve Attachment">0ea4715931651300777f5e75a944cdb2</activity>
+        <condition>activityOutput.file_name != "ERROR: Query results were empty. Confirm record and attachment exist."</condition>
+        <condition_default display_value="Success">b35e2109412d1300777f9cea6b847609</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Success</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:41:58</sys_created_on>
+        <sys_id>04d4f15931651300777f5e75a944cd13</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:41:58</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="invoke terrasnow S3 upload">e8babcd931a11300777f5e75a944cdc9</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>17</databus_lookup_id>
+        <height/>
+        <input>{"target_host":"${workflow.scratchpad.target_host}","user_name":"${workflow.scratchpad.user_name}","user_pwd":"${workflow.scratchpad.user_pwd}","table_name":"${workflow.scratchpad.table_name}","sys_id":"${workflow.scratchpad.sys_id}","file_name":"${workflow.scratchpad.fileName}","cat_sys_id":"${data.get(8).cat_sys_id}","zip_full_path":"${data.get(13).zip_full_path}","target_bucket":"${workflow.scratchpad.target_s3_bucket}"}</input>
+        <is_parent>false</is_parent>
+        <name>S3 Upload</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="S3 Upload">7cc3f11931651300777f5e75a944cdd8</stage>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:52:50</sys_created_on>
+        <sys_id>9d1739d931651300777f5e75a944cd03</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 18:04:14</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="terraform catalog item creation - scoped">34327d9531651300777f5e75a944cda5</workflow_version>
+        <x>46</x>
+        <y>628</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=9d1739d931651300777f5e75a944cd03"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="S3 Upload">9d1739d931651300777f5e75a944cd03</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:52:50</sys_created_on>
+        <sys_id>d74779d931651300777f5e75a944cde7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:52:50</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>11</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>separate response contents</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Create Catalog Item">35a3f11931651300777f5e75a944cdf8</stage>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:47:27</sys_created_on>
+        <sys_id>3806759931651300777f5e75a944cdec</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 18:02:08</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="terraform catalog item creation - scoped">34327d9531651300777f5e75a944cda5</workflow_version>
+        <x>442</x>
+        <y>261</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=3806759931651300777f5e75a944cdec"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3806759931651300777f5e75a944cdec</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:47:27</sys_created_on>
+        <sys_id>e016399931651300777f5e75a944cd06</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 18:02:08</sys_updated_on>
+        <value>var response = data.get(5).file_name;&#13;
+response = JSON.parse(response);&#13;
+workflow.scratchpad.fileName = response.FileName;&#13;
+workflow.scratchpad.attachmentSysId = response.AttachmentSysId;</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3806759931651300777f5e75a944cdec</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:47:27</sys_created_on>
+        <sys_id>e016399931651300777f5e75a944cd06</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 18:02:08</sys_updated_on>
+        <value>var response = data.get(5).file_name;&#13;
+response = JSON.parse(response);&#13;
+workflow.scratchpad.fileName = response.FileName;&#13;
+workflow.scratchpad.attachmentSysId = response.AttachmentSysId;</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="separate response contents">3806759931651300777f5e75a944cdec</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:47:27</sys_created_on>
+        <sys_id>2816399931651300777f5e75a944cd06</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:47:27</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>16</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Set client script trigger variable</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Populate Variables">c8b3351931651300777f5e75a944cd40</stage>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:51:05</sys_created_on>
+        <sys_id>a2d675d931651300777f5e75a944cd4e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 18:03:46</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="terraform catalog item creation - scoped">34327d9531651300777f5e75a944cda5</workflow_version>
+        <x>1076</x>
+        <y>262</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=a2d675d931651300777f5e75a944cd4e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a2d675d931651300777f5e75a944cd4e</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:51:05</sys_created_on>
+        <sys_id>f1e675d931651300777f5e75a944cd8d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 18:03:46</sys_updated_on>
+        <value>//get sys_id of toggle variable&#13;
+var toggleSysId = '';&#13;
+var toggleVar = new GlideRecord('item_option_new');&#13;
+toggleVar.addQuery('cat_item', data.get(8).cat_sys_id);&#13;
+toggleVar.addQuery('name', 'adv_toggle');&#13;
+toggleVar.query();&#13;
+if(toggleVar.next()){&#13;
+toggleSysId = toggleVar.sys_id;&#13;
+}&#13;
+&#13;
+&#13;
+//associate toggle var with client script&#13;
+var clientScript = new GlideRecord('catalog_script_client');&#13;
+clientScript.addQuery('cat_item', data.get(8).cat_sys_id);&#13;
+clientScript.addQuery('name', 'display toggle');&#13;
+clientScript.query();&#13;
+while(clientScript.next()){&#13;
+clientScript.cat_variable="IO:"+toggleSysId;&#13;
+clientScript.update();&#13;
+}&#13;
+&#13;
+//get sys_id of SecurityGroups dropdown&#13;
+var toggleSysId = '';&#13;
+var sgIds = new GlideRecord('item_option_new');&#13;
+sgIds.addQuery('cat_item', data.get(8).cat_sys_id);&#13;
+sgIds.addQuery('name', 'tfv_SecurityGroupIds');&#13;
+sgIds.query();&#13;
+if(sgIds.next()){&#13;
+sgIdsSysId = sgIds.sys_id;&#13;
+}&#13;
+&#13;
+&#13;
+//associate SecurityGroup dropdown with client script&#13;
+var clientScript = new GlideRecord('catalog_script_client');&#13;
+clientScript.addQuery('cat_item', data.get(8).cat_sys_id);&#13;
+clientScript.addQuery('name', 'subnet filter');&#13;
+clientScript.query();&#13;
+while(clientScript.next()){&#13;
+clientScript.cat_variable="IO:"+sgIdsSysId;&#13;
+clientScript.update();&#13;
+}&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a2d675d931651300777f5e75a944cd4e</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:51:05</sys_created_on>
+        <sys_id>f1e675d931651300777f5e75a944cd8d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 18:03:46</sys_updated_on>
+        <value>//get sys_id of toggle variable&#13;
+var toggleSysId = '';&#13;
+var toggleVar = new GlideRecord('item_option_new');&#13;
+toggleVar.addQuery('cat_item', data.get(8).cat_sys_id);&#13;
+toggleVar.addQuery('name', 'adv_toggle');&#13;
+toggleVar.query();&#13;
+if(toggleVar.next()){&#13;
+toggleSysId = toggleVar.sys_id;&#13;
+}&#13;
+&#13;
+&#13;
+//associate toggle var with client script&#13;
+var clientScript = new GlideRecord('catalog_script_client');&#13;
+clientScript.addQuery('cat_item', data.get(8).cat_sys_id);&#13;
+clientScript.addQuery('name', 'display toggle');&#13;
+clientScript.query();&#13;
+while(clientScript.next()){&#13;
+clientScript.cat_variable="IO:"+toggleSysId;&#13;
+clientScript.update();&#13;
+}&#13;
+&#13;
+//get sys_id of SecurityGroups dropdown&#13;
+var toggleSysId = '';&#13;
+var sgIds = new GlideRecord('item_option_new');&#13;
+sgIds.addQuery('cat_item', data.get(8).cat_sys_id);&#13;
+sgIds.addQuery('name', 'tfv_SecurityGroupIds');&#13;
+sgIds.query();&#13;
+if(sgIds.next()){&#13;
+sgIdsSysId = sgIds.sys_id;&#13;
+}&#13;
+&#13;
+&#13;
+//associate SecurityGroup dropdown with client script&#13;
+var clientScript = new GlideRecord('catalog_script_client');&#13;
+clientScript.addQuery('cat_item', data.get(8).cat_sys_id);&#13;
+clientScript.addQuery('name', 'subnet filter');&#13;
+clientScript.query();&#13;
+while(clientScript.next()){&#13;
+clientScript.cat_variable="IO:"+sgIdsSysId;&#13;
+clientScript.update();&#13;
+}&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Set client script trigger variable">a2d675d931651300777f5e75a944cd4e</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:51:05</sys_created_on>
+        <sys_id>31e675d931651300777f5e75a944cdf1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:51:05</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Set variables</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:40:08</sys_created_on>
+        <sys_id>93547d1931651300777f5e75a944cdb2</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 19:12:41</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="terraform catalog item creation - scoped">34327d9531651300777f5e75a944cda5</workflow_version>
+        <x>133</x>
+        <y>25</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=93547d1931651300777f5e75a944cdb2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>93547d1931651300777f5e75a944cdb2</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:40:08</sys_created_on>
+        <sys_id>2964b91931651300777f5e75a944cdd5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 19:12:41</sys_updated_on>
+        <value>var credgetter = new GetAdminCredentials();&#13;
+var credentials = credgetter.getAdminCredentials("REST API Credential");&#13;
+&#13;
+workflow.scratchpad.user_name = credentials.user_name;&#13;
+workflow.scratchpad.user_pwd = credentials.password;&#13;
+&#13;
+workflow.scratchpad.table_name = 'sc_req_item';&#13;
+workflow.scratchpad.sys_id  = current.sys_id;&#13;
+&#13;
+workflow.scratchpad.catalog_item_name = current.variables.catalog_item_name;&#13;
+workflow.scratchpad.catalog_item_description = current.variables.catalog_item_description;&#13;
+workflow.scratchpad.os_toggle = current.variables.os_type;&#13;
+&#13;
+&#13;
+workflow.scratchpad.target_host = 'ip-10-32-16-131.ec2.internal';&#13;
+workflow.scratchpad.target_s3_bucket = 'snow-terraform-testing';</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>93547d1931651300777f5e75a944cdb2</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:40:08</sys_created_on>
+        <sys_id>2964b91931651300777f5e75a944cdd5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 19:12:41</sys_updated_on>
+        <value>var credgetter = new GetAdminCredentials();&#13;
+var credentials = credgetter.getAdminCredentials("REST API Credential");&#13;
+&#13;
+workflow.scratchpad.user_name = credentials.user_name;&#13;
+workflow.scratchpad.user_pwd = credentials.password;&#13;
+&#13;
+workflow.scratchpad.table_name = 'sc_req_item';&#13;
+workflow.scratchpad.sys_id  = current.sys_id;&#13;
+&#13;
+workflow.scratchpad.catalog_item_name = current.variables.catalog_item_name;&#13;
+workflow.scratchpad.catalog_item_description = current.variables.catalog_item_description;&#13;
+workflow.scratchpad.os_toggle = current.variables.os_type;&#13;
+&#13;
+&#13;
+workflow.scratchpad.target_host = 'ip-10-32-16-131.ec2.internal';&#13;
+workflow.scratchpad.target_s3_bucket = 'snow-terraform-testing';</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Set variables">93547d1931651300777f5e75a944cdb2</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:40:08</sys_created_on>
+        <sys_id>2564b91931651300777f5e75a944cdd6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:40:08</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">16a6f1d931651300777f5e75a944cd2a</condition>
+        <from display_value="Log Success">9f9671d931651300777f5e75a944cde0</from>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:51:15</sys_created_on>
+        <sys_id>04f675d931651300777f5e75a944cd80</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:51:15</sys_updated_on>
+        <to display_value="Set client script trigger variable">a2d675d931651300777f5e75a944cd4e</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Failure">4d8671d931651300777f5e75a944cd9e</condition>
+        <from display_value="Create Cat item vars">b746bd9931651300777f5e75a944cde1</from>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:50:33</sys_created_on>
+        <sys_id>06c6f1d931651300777f5e75a944cd97</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:50:33</sys_updated_on>
+        <to display_value="Log Failure">12b6f1d931651300777f5e75a944cd2b</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">2816399931651300777f5e75a944cd06</condition>
+        <from display_value="separate response contents">3806759931651300777f5e75a944cdec</from>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:48:07</sys_created_on>
+        <sys_id>12367d9931651300777f5e75a944cdfd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:48:07</sys_updated_on>
+        <to display_value="Log attachment sysid">1626399931651300777f5e75a944cdf7</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Failure">3885f95931651300777f5e75a944cd16</condition>
+        <from display_value="Create Catalog Item">7345395931651300777f5e75a944cd69</from>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:46:22</sys_created_on>
+        <sys_id>24d5bd5931651300777f5e75a944cd58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:46:22</sys_updated_on>
+        <to display_value="Log Failure">edc57d5931651300777f5e75a944cd18</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Success">04d4f15931651300777f5e75a944cd13</condition>
+        <from display_value="Retrieve Attachment">0ea4715931651300777f5e75a944cdb2</from>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:42:49</sys_created_on>
+        <sys_id>2c05755931651300777f5e75a944cd52</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:42:49</sys_updated_on>
+        <to display_value="Log Success">69f4355931651300777f5e75a944cda5</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">23f4755931651300777f5e75a944cd5d</condition>
+        <from display_value="Log Success">69f4355931651300777f5e75a944cda5</from>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:45:05</sys_created_on>
+        <sys_id>3d85795931651300777f5e75a944cd34</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:45:05</sys_updated_on>
+        <to display_value="Create Catalog Item">7345395931651300777f5e75a944cd69</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Success">cd8671d931651300777f5e75a944cd9e</condition>
+        <from display_value="Create Cat item vars">b746bd9931651300777f5e75a944cde1</from>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:50:07</sys_created_on>
+        <sys_id>6fa6f1d931651300777f5e75a944cd3b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:50:07</sys_updated_on>
+        <to display_value="Log Success">9f9671d931651300777f5e75a944cde0</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Failure">84d4f15931651300777f5e75a944cd13</condition>
+        <from display_value="Retrieve Attachment">0ea4715931651300777f5e75a944cdb2</from>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:43:35</sys_created_on>
+        <sys_id>8c35f55931651300777f5e75a944cd1b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:43:35</sys_updated_on>
+        <to display_value="Log Failure">5d25b55931651300777f5e75a944cdd4</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">a8c635d931651300777f5e75a944cd4a</condition>
+        <from display_value="Log Failure">12b6f1d931651300777f5e75a944cd2b</from>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:51:23</sys_created_on>
+        <sys_id>9af6b5d931651300777f5e75a944cdbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:51:23</sys_updated_on>
+        <to display_value="End">ac7379d531651300777f5e75a944cde2</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">2977f9d931651300777f5e75a944cd90</condition>
+        <from display_value="Log status">2f6779d931651300777f5e75a944cdf8</from>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:54:25</sys_created_on>
+        <sys_id>a2a7bdd931651300777f5e75a944cd1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:54:25</sys_updated_on>
+        <to display_value="Cleanup">4c973dd931651300777f5e75a944cd37</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">0b25f55931651300777f5e75a944cd19</condition>
+        <from display_value="Log Failure">5d25b55931651300777f5e75a944cdd4</from>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:43:38</sys_created_on>
+        <sys_id>a435f55931651300777f5e75a944cd52</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:43:38</sys_updated_on>
+        <to display_value="End">ac7379d531651300777f5e75a944cde2</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">d74779d931651300777f5e75a944cde7</condition>
+        <from display_value="S3 Upload">9d1739d931651300777f5e75a944cd03</from>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:53:36</sys_created_on>
+        <sys_id>ae77b9d931651300777f5e75a944cd4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:53:36</sys_updated_on>
+        <to display_value="Log status">2f6779d931651300777f5e75a944cdf8</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">a47379d531651300777f5e75a944cde2</condition>
+        <from display_value="Begin">e87379d531651300777f5e75a944cde1</from>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:40:14</sys_created_on>
+        <sys_id>b2647d1931651300777f5e75a944cdc8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:40:14</sys_updated_on>
+        <to display_value="Set variables">93547d1931651300777f5e75a944cdb2</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">13c57d5931651300777f5e75a944cddf</condition>
+        <from display_value="Log Failure">edc57d5931651300777f5e75a944cd18</from>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:46:44</sys_created_on>
+        <sys_id>c2e5719931651300777f5e75a944cdca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:46:44</sys_updated_on>
+        <to display_value="End">ac7379d531651300777f5e75a944cde2</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">d5a7bdd931651300777f5e75a944cd1c</condition>
+        <from display_value="Cleanup">4c973dd931651300777f5e75a944cd37</from>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:54:27</sys_created_on>
+        <sys_id>cba7bdd931651300777f5e75a944cd1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:54:27</sys_updated_on>
+        <to display_value="End">ac7379d531651300777f5e75a944cde2</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">31e675d931651300777f5e75a944cdf1</condition>
+        <from display_value="Set client script trigger variable">a2d675d931651300777f5e75a944cd4e</from>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:52:57</sys_created_on>
+        <sys_id>cd57b9d931651300777f5e75a944cd02</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:52:57</sys_updated_on>
+        <to display_value="S3 Upload">9d1739d931651300777f5e75a944cd03</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Success">b485f95931651300777f5e75a944cd16</condition>
+        <from display_value="Create Catalog Item">7345395931651300777f5e75a944cd69</from>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:45:52</sys_created_on>
+        <sys_id>d9b53d5931651300777f5e75a944cdee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:45:52</sys_updated_on>
+        <to display_value="Log Success">89a53d5931651300777f5e75a944cd4a</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">63a53d5931651300777f5e75a944cdcd</condition>
+        <from display_value="Log Success">89a53d5931651300777f5e75a944cd4a</from>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:47:30</sys_created_on>
+        <sys_id>dd16399931651300777f5e75a944cdec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:47:30</sys_updated_on>
+        <to display_value="separate response contents">3806759931651300777f5e75a944cdec</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">c1363d9931651300777f5e75a944cdaf</condition>
+        <from display_value="Log attachment sysid">1626399931651300777f5e75a944cdf7</from>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:49:29</sys_created_on>
+        <sys_id>de86fd9931651300777f5e75a944cd07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:49:29</sys_updated_on>
+        <to display_value="Create Cat item vars">b746bd9931651300777f5e75a944cde1</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">2564b91931651300777f5e75a944cdd6</condition>
+        <from display_value="Set variables">93547d1931651300777f5e75a944cdb2</from>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:40:59</sys_created_on>
+        <sys_id>f594315931651300777f5e75a944cd15</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:40:59</sys_updated_on>
+        <to display_value="Log Variables">2384315931651300777f5e75a944cd07</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">8994315931651300777f5e75a944cd20</condition>
+        <from display_value="Log Variables">2384315931651300777f5e75a944cd07</from>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:42:09</sys_created_on>
+        <sys_id>fed4f15931651300777f5e75a944cd7f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:42:09</sys_updated_on>
+        <to display_value="Retrieve Attachment">0ea4715931651300777f5e75a944cdb2</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 17:35:59</sys_created_on>
+        <sys_id>a87379d531651300777f5e75a944cde0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 17:35:59</sys_updated_on>
+        <workflow_version display_value="terraform catalog item creation - scoped">34327d9531651300777f5e75a944cda5</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=607379d531651300777f5e75a944cde1^sys_id!=34327d9531651300777f5e75a944cda5">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>

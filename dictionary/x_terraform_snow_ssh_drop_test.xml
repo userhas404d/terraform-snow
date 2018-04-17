@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
-    <element label="ssh drop test" max_length="40" name="x_terraform_snow_ssh_drop_test" type="collection">
-        <element label="remote host" max_length="255" name="remote_host" type="string"/>
-    </element>
-</database>

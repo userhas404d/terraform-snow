@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_terraform_snow.TerraformAWSAccountQuery</api_name>
+        <client_callable>true</client_callable>
+        <description>Client callable script include to call a workflow provided its name</description>
+        <name>TerraformAWSAccountQuery</name>
+        <script><![CDATA[var TerraformAWSAccountQuery = Class.create();
+TerraformAWSAccountQuery.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+
+	 /*
+	 * method available to client scripts call using:
+	 * var awsAccountValues = new GlideAjax("TerraformAWSAccountQuery");
+	 * awsAccountValues.addParam("sysparm_name","getAWSAccountInfo");
+	 */
+	getAWSAccountInfo: function(workflow_name) { // build new response xml element for result
+        //workflow_name = "tfsnow - get aws account info"
+		var wf = new Workflow();
+		var wfId = wf.getWorkflowFromName(workflow_name);
+		gs.log('TerraformAWSAccountQuery - workflow sysId: ' + wfId);
+		var context = wf.startFlow(wfId, null, workflow_name, null);
+		var sysId = context.sys_id;
+		gs.log('TerraformAWSAccountQuery - workflow context sysId: ' + sysId);
+		this._waitForElement(sysId);
+		return sysId;
+      },
+
+    _getWorkflowGlideRecord: function(sysId) {
+			 // gs.log('TerraformAWSAccountQuery - _getWorkflowState: made it this far' );
+ 			 var gr = new GlideRecord('wf_context');
+ 			 gr.addQuery('sys_id', sysId);
+ 			 gr.query();
+ 			    while(gr.next()){
+ 					    return gr;
+ 				   }
+				 },
+
+    _waitForElement: function(sysId) {
+	    var gr = this._getWorkflowGlideRecord(sysId);
+		var workflowState = gr.state;
+	    if(typeof workflowState == "undefined" || workflowState == null || workflowState == 'executing'){
+	        gs.log('TerraformAWSAccountQuery - _waitForElement: workflow state is executing..');
+			//wait for 5 seconds and then try again.. 
+			gs.sleep(5000);
+			this._waitForElement(sysId);
+	    }
+	    else{
+			gs.log('TerraformAWSAccountQuery - _waitForElement: WORKFLOW COMPLETE!');
+  			return sysId;
+	    }
+	  },
+
+      type : "TerraformAWSAccountQuery"
+   });
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-17 19:39:44</sys_created_on>
+        <sys_id>622f869131e51300777f5e75a944cd7f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>TerraformAWSAccountQuery</sys_name>
+        <sys_package display_value="terraform-snow" source="x_terraform_snow">e4a2adf774241300777ff5c38bfe8185</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="terraform-snow">e4a2adf774241300777ff5c38bfe8185</sys_scope>
+        <sys_update_name>sys_script_include_622f869131e51300777f5e75a944cd7f</sys_update_name>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 19:41:14</sys_updated_on>
+    </sys_script_include>
+</record_update>
