@@ -2,7 +2,7 @@
 <record_update table="sc_catalog_view_mtom">
     <sc_catalog_view_mtom action="INSERT_OR_UPDATE">
         <default>true</default>
-        <sc_catalog display_value="Terraform Resources">39a813d408f01300777f3caf10548e05</sc_catalog>
+        <sc_catalog display_value="Terraform Resources_application">39a813d408f01300777f3caf10548e05</sc_catalog>
         <sys_class_name>sc_catalog_view_mtom</sys_class_name>
         <sys_created_by>adm.taylor.c.mulder</sys_created_by>
         <sys_created_on>2018-03-08 15:37:39</sys_created_on>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="wf_element_activity">
+    <wf_element_activity action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <attributes/>
+        <base_provider display_value="SSH">ebee8be6d7022100dfc260affd610368</base_provider>
+        <category/>
+        <checked_out_by/>
+        <default_height/>
+        <default_width/>
+        <description/>
+        <image>images/heisenberg_icons/workflow_ie8/provider_ssh.png</image>
+        <input_meta>{"name":"Input","type":"DATA_OBJECT","properties":[{"name":"user_name","type":"STRING","mandatory":false},{"name":"user_pwd","type":"STRING","mandatory":false},{"name":"table_name","type":"STRING","mandatory":false},{"name":"table_sys_id","type":"STRING","mandatory":false},{"name":"target_host","type":"STRING","mandatory":false}]}</input_meta>
+        <input_process_script/>
+        <input_transform>{"source":"${activityInput.target_host}","command":"echo \"%%invoke_call%%\";\ncmdout=$(invoke get-attachment \\\n--user-name='${activityInput.user_name}' \\\n--user-pwd='${activityInput.user_pwd}' \\\n--table-name='${activityInput.table_name}' \\\n--table-sys-id='${activityInput.table_sys_id}' \\\n) ;\necho \"$cmdout\"\nRETCODE=$?; \necho \"%%\"\necho \"%%return_code%%\";\necho $RETCODE;\necho \"%%\"\n","directory":"/home/ec2-user/tools","credential_tag":"terraform","midCapabilities":"2d20f2760a0006bc095bf17ae4e0d4ee","long_running":"false","must_sudo":"false"}</input_transform>
+        <local_variables/>
+        <name>invoke terrasnow get attachment</name>
+        <output_meta>{"name":"Output","type":"DATA_OBJECT","properties":[{"name":"error_status","type":"STRING"},{"name":"file_name","type":"STRING"}]}</output_meta>
+        <output_process_script/>
+        <output_transform>[{"toLink":"activityOutput.file_name","description":"file name","to":"file_name","toType":"string","toDestination":"activityOutput","sourceLabel":"executionResult.tags","from":"${executionResult.tags}","fromSource":"executionResult","type":"JSON","children":"[]","translation":"invoke_call"}]</output_transform>
+        <processing_script/>
+        <sample_payloads>{"executionResult.output":{"payload":"%%invoke_call%%\nlx-instance.zip\n%%\n%%return_code%%\n0\n%%","type":"direct"},"executionResult.errorMessages":{"payload":"null","type":"direct"},"executionResult.debugMessages":{"payload":"null","type":"direct"},"executionResult.eccSysId":{"payload":"8bf354d641491300777fded0d5716979","type":"direct"},"executionResult.tags":{"payload":"{\"invoke_call\":\"lx-instance.zip\",\"__text__\":\"\",\"return_code\":\"0\"}","type":"json"},"executionResult.tags[\"inovke_call\"]":{"payload":"{\"invoke_call\":\"ERROR: Query results were empty. Confirm record and attachment exist.\",\"__text__\":\"\",\"return_code\":\"0\"}","type":"json"}}</sample_payloads>
+        <short_description/>
+        <style/>
+        <sys_class_name>wf_element_activity</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-03-26 13:15:11</sys_created_on>
+        <sys_id>d1b4278241c11300777fded0d571697a</sys_id>
+        <sys_mod_count>43</sys_mod_count>
+        <sys_name>invoke terrasnow get attachment</sys_name>
+        <sys_package display_value="terraform-snow" source="x_terraform_snow">e4a2adf774241300777ff5c38bfe8185</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="terraform-snow">e4a2adf774241300777ff5c38bfe8185</sys_scope>
+        <sys_update_name>wf_element_activity_d1b4278241c11300777fded0d571697a</sys_update_name>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-16 22:37:40</sys_updated_on>
+        <version_container_id>0ac4e78241c11300777fded0d571698a</version_container_id>
+    </wf_element_activity>
+    <sys_translated_text action="delete_multiple" query="documentkey=d1b4278241c11300777fded0d571697a"/>
+    <wf_versionable action="INSERT_OR_UPDATE">
+        <checked_out/>
+        <checked_out_by/>
+        <published>false</published>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-03-26 13:15:11</sys_created_on>
+        <sys_id>c2c4e78241c11300777fded0d571698b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-16 22:37:40</sys_updated_on>
+        <valid_from>2018-04-09 17:52:53</valid_from>
+        <valid_to/>
+        <version>1</version>
+        <version_container_id>0ac4e78241c11300777fded0d571698a</version_container_id>
+        <wf_element_definition display_value="invoke terrasnow get attachment">d1b4278241c11300777fded0d571697a</wf_element_definition>
+    </wf_versionable>
+    <wf_condition_default action="INSERT_OR_UPDATE">
+        <activity_definition display_value="invoke terrasnow get attachment">d1b4278241c11300777fded0d571697a</activity_definition>
+        <condition>activityOutput.file_name != "ERROR: Query results were empty. Confirm record and attachment exist."</condition>
+        <derived_definition/>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <name>Success</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-03-26 14:41:12</sys_created_on>
+        <sys_id>61a7ffce41051300777fded0d5716974</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-03-26 16:11:24</sys_updated_on>
+    </wf_condition_default>
+    <wf_condition_default action="INSERT_OR_UPDATE">
+        <activity_definition display_value="invoke terrasnow get attachment">d1b4278241c11300777fded0d571697a</activity_definition>
+        <condition/>
+        <derived_definition/>
+        <else_flag>true</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <name>Failure</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-03-26 14:37:33</sys_created_on>
+        <sys_id>9976370e41051300777fded0d5716970</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-03-26 14:41:46</sys_updated_on>
+    </wf_condition_default>
+</record_update>

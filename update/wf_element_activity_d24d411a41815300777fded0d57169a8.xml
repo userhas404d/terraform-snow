@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="wf_element_activity">
+    <wf_element_activity action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <attributes/>
+        <base_provider display_value="SSH">ebee8be6d7022100dfc260affd610368</base_provider>
+        <category/>
+        <checked_out_by/>
+        <default_height/>
+        <default_width/>
+        <description/>
+        <image>images/heisenberg_icons/workflow_ie8/provider_ssh.png</image>
+        <input_meta>{"name":"Input","type":"DATA_OBJECT","properties":[{"name":"target_host","type":"STRING","mandatory":false},{"name":"user_name","type":"STRING","mandatory":false},{"name":"user_pwd","type":"STRING","mandatory":false},{"name":"table_name","type":"STRING","mandatory":false},{"name":"sys_id","type":"STRING","mandatory":false},{"name":"file_name","type":"STRING","mandatory":false},{"name":"cat_sys_id","type":"STRING","mandatory":false},{"name":"zip_full_path","type":"STRING","mandatory":false},{"name":"target_bucket","type":"STRING","mandatory":false}]}</input_meta>
+        <input_process_script/>
+        <input_transform>{"source":"${activityInput.target_host}","command":"echo \"%%invoke_call%%\";\ncmdout=$(invoke s3-upload \\\n--user-name='${activityInput.user_name}' \\\n--user-pwd='${activityInput.user_pwd}' \\\n--table-name='${activityInput.table_name}' \\\n--sys-id='${activityInput.sys_id}' \\\n--file-name='${activityInput.file_name}' \\\n--cat-sys-id='${activityInput.cat_sys_id}' \\\n--zip-full-path='${activityInput.zip_full_path}' \\\n--target-bucket='${activityInput.target_bucket}' \\\n) ;\necho \"$cmdout\"\nRETCODE=$?; \necho \"%%\"\necho \"%%return_code%%\";\necho $RETCODE;\necho \"%%\"","directory":"/home/ec2-user/tools","credential_tag":"terraform","midCapabilities":"2d20f2760a0006bc095bf17ae4e0d4ee","long_running":"false","must_sudo":"false"}</input_transform>
+        <local_variables/>
+        <name>invoke terrasnow S3 upload</name>
+        <output_meta>{"name":"Output","type":"DATA_OBJECT","properties":[{"name":"upload_status","type":"STRING"}]}</output_meta>
+        <output_process_script/>
+        <output_transform>[{"toLink":"activityOutput.upload_status","description":"S3 Upload status","to":"upload_status","toType":"string","toDestination":"activityOutput","sourceLabel":"executionResult.tags","from":"${executionResult.tags}","fromSource":"executionResult","type":"JSON","children":"[]","translation":"invoke_call"}]</output_transform>
+        <processing_script/>
+        <sample_payloads>{}</sample_payloads>
+        <short_description/>
+        <style/>
+        <sys_class_name>wf_element_activity</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-03-26 20:52:14</sys_created_on>
+        <sys_id>d24d411a41815300777fded0d57169a8</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>invoke terrasnow S3 upload</sys_name>
+        <sys_package display_value="terraform-snow" source="x_terraform_snow">e4a2adf774241300777ff5c38bfe8185</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="terraform-snow">e4a2adf774241300777ff5c38bfe8185</sys_scope>
+        <sys_update_name>wf_element_activity_d24d411a41815300777fded0d57169a8</sys_update_name>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 13:30:06</sys_updated_on>
+        <version_container_id>496d411a41815300777fded0d57169e8</version_container_id>
+    </wf_element_activity>
+    <sys_translated_text action="delete_multiple" query="documentkey=d24d411a41815300777fded0d57169a8"/>
+    <wf_versionable action="INSERT_OR_UPDATE">
+        <checked_out/>
+        <checked_out_by/>
+        <published>false</published>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-03-26 20:52:15</sys_created_on>
+        <sys_id>156d051a41815300777fded0d571693e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-17 13:30:06</sys_updated_on>
+        <valid_from>2018-04-09 17:53:14</valid_from>
+        <valid_to/>
+        <version>1</version>
+        <version_container_id>496d411a41815300777fded0d57169e8</version_container_id>
+        <wf_element_definition display_value="invoke terrasnow S3 upload">d24d411a41815300777fded0d57169a8</wf_element_definition>
+    </wf_versionable>
+</record_update>

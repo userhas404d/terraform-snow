@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="wf_element_activity">
+    <wf_element_activity action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <attributes/>
+        <base_provider display_value="SSH">ebee8be6d7022100dfc260affd610368</base_provider>
+        <category/>
+        <checked_out_by/>
+        <default_height/>
+        <default_width/>
+        <description/>
+        <image>images/heisenberg_icons/workflow_ie8/provider_ssh.png</image>
+        <input_meta>{"name":"Input","type":"DATA_OBJECT","properties":[{"name":"target_host","type":"STRING","mandatory":false},{"name":"user_name","type":"STRING","mandatory":false},{"name":"user_pwd","type":"STRING","mandatory":false},{"name":"file_name","type":"STRING","mandatory":false},{"name":"cat_sys_id","type":"STRING","mandatory":false},{"name":"os_type","type":"STRING","mandatory":false},{"name":"RITM_attachment_sys_id","type":"STRING","mandatory":false}]}</input_meta>
+        <input_process_script/>
+        <input_transform>{"source":"${activityInput.target_host}","command":"echo \"%%invoke_call%%\";\ncmdout=$(invoke unzip-and-create-vars \\\n--user-name='${activityInput.user_name}' \\\n--user-pwd='${activityInput.user_pwd}' \\\n--file-name='${activityInput.file_name}' \\\n--cat-sys-id='${activityInput.cat_sys_id}' \\\n--ritm-attachment-sys-id='${activityInput.RITM_attachment_sys_id}' \\\n--os-toggle='${activityInput.os_type}' \\\n) ;\necho \"$cmdout\"\nRETCODE=$?; \necho \"%%\"\necho \"%%return_code%%\";\necho $RETCODE;\necho \"%%\"","directory":"/home/ec2-user/tools","credential_tag":"terraform","midCapabilities":"2d20f2760a0006bc095bf17ae4e0d4ee","long_running":"false","must_sudo":"false"}</input_transform>
+        <local_variables/>
+        <name>invoke terrasnow unzip and create vars</name>
+        <output_meta>{"name":"Output","type":"DATA_OBJECT","properties":[{"name":"zip_full_path","type":"STRING"}]}</output_meta>
+        <output_process_script><![CDATA[if (activityOutput.zip_full_path == 'ERROR: Required files not present in archive.'){
+	activityOutput.zip_full_path = 'ERROR';
+} else if ( activityOutput.zip_full_path == 'ERROR: Bad zip file'){
+	activityOutput.zip_full_path = 'ERROR';
+} else {
+	activityOutput.zip_full_path = activityOutput.zip_full_path;
+}]]></output_process_script>
+        <output_transform>[{"toLink":"activityOutput.zip_full_path","description":"","to":"zip_full_path","toType":"string","toDestination":"activityOutput","sourceLabel":"executionResult.tags","from":"${executionResult.tags}","fromSource":"executionResult","type":"JSON","children":"[]","translation":"invoke_call"}]</output_transform>
+        <processing_script/>
+        <sample_payloads>{}</sample_payloads>
+        <short_description/>
+        <style/>
+        <sys_class_name>wf_element_activity</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-16 18:02:01</sys_created_on>
+        <sys_id>acdf688941a51300777f9cea6b847668</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>invoke terrasnow unzip and create vars</sys_name>
+        <sys_package display_value="terraform-snow" source="x_terraform_snow">e4a2adf774241300777ff5c38bfe8185</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="terraform-snow">e4a2adf774241300777ff5c38bfe8185</sys_scope>
+        <sys_update_name>wf_element_activity_acdf688941a51300777f9cea6b847668</sys_update_name>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-16 18:15:49</sys_updated_on>
+        <version_container_id>00b2e49a41c91300777fded0d571692e</version_container_id>
+    </wf_element_activity>
+    <sys_translated_text action="delete_multiple" query="documentkey=acdf688941a51300777f9cea6b847668"/>
+    <wf_versionable action="INSERT_OR_UPDATE">
+        <checked_out/>
+        <checked_out_by/>
+        <published>true</published>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-16 18:02:01</sys_created_on>
+        <sys_id>acdf688941a51300777f9cea6b847669</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-16 18:15:49</sys_updated_on>
+        <valid_from>2018-04-16 18:15:49</valid_from>
+        <valid_to/>
+        <version>2</version>
+        <version_container_id>00b2e49a41c91300777fded0d571692e</version_container_id>
+        <wf_element_definition display_value="invoke terrasnow unzip and create vars">acdf688941a51300777f9cea6b847668</wf_element_definition>
+    </wf_versionable>
+    <wf_condition_default action="INSERT_OR_UPDATE">
+        <activity_definition display_value="invoke terrasnow unzip and create vars">acdf688941a51300777f9cea6b847668</activity_definition>
+        <condition/>
+        <derived_definition>c2d65e6239c91300777f8f559447a040</derived_definition>
+        <else_flag>true</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <name>Failure</name>
+        <order/>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-16 18:02:01</sys_created_on>
+        <sys_id>28df688941a51300777f9cea6b84766b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-16 18:02:01</sys_updated_on>
+    </wf_condition_default>
+    <wf_condition_default action="INSERT_OR_UPDATE">
+        <activity_definition display_value="invoke terrasnow unzip and create vars">acdf688941a51300777f9cea6b847668</activity_definition>
+        <condition>activityOutput.zip_full_path != 'ERROR'</condition>
+        <derived_definition>0cd61e6239c91300777f8f559447a030</derived_definition>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <name>Success</name>
+        <order/>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-16 18:02:01</sys_created_on>
+        <sys_id>6cdf688941a51300777f9cea6b84766a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-16 18:02:01</sys_updated_on>
+    </wf_condition_default>
+    <wf_versionable action="update_multiple" query="version_container_id=00b2e49a41c91300777fded0d571692e^sys_id!=acdf688941a51300777f9cea6b847669^version&lt;2">
+        <published>false</published>
+    </wf_versionable>
+    <wf_activity action="update_multiple" is_dot_walk_query="true" query="workflow_version.published=true^activity_definition.version_container_id=00b2e49a41c91300777fded0d571692e">
+        <new_activity_definition>acdf688941a51300777f9cea6b847668</new_activity_definition>
+        <out_of_date>true</out_of_date>
+        <notes>There is a newer version of this activity.
+
+To update the activity, check out the workflow, select the activity, right click
+and select 'Update activity' to use the latest version, then publish the workflow</notes>
+    </wf_activity>
+</record_update>

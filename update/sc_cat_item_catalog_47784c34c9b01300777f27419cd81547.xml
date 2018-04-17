@@ -2,7 +2,7 @@
 <record_update table="sc_cat_item_catalog">
     <sc_cat_item_catalog action="INSERT_OR_UPDATE">
         <sc_cat_item display_value="lx-instance">22f70434c9b01300777f27419cd81574</sc_cat_item>
-        <sc_catalog display_value="Terraform Resources">39a813d408f01300777f3caf10548e05</sc_catalog>
+        <sc_catalog display_value="Terraform Resources_application">39a813d408f01300777f3caf10548e05</sc_catalog>
         <sys_class_name>sc_cat_item_catalog</sys_class_name>
         <sys_created_by>adm.taylor.c.mulder</sys_created_by>
         <sys_created_on>2018-03-09 13:44:36</sys_created_on>

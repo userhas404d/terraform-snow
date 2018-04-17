@@ -3,63 +3,108 @@
     <sys_ui_list parent="" relationship="" sys_domain="global" table="x_terraform_snow_approved_amis" version="2" view="">
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>ami_name</element>
-            <list_id display_value="x_terraform_snow_approved_amis" element="NULL" name="x_terraform_snow_approved_amis" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3cae043cc9b01300777f27419cd8159a</list_id>
+            <element>ami_id</element>
+            <list_id display_value="x_terraform_snow_approved_amis" element="NULL" name="x_terraform_snow_approved_amis" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">07e79b9dc1151300777fb2130d796608</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
-            <sys_created_by>adm.taylor.c.mulder</sys_created_by>
-            <sys_created_on>2018-03-09 14:11:29</sys_created_on>
-            <sys_id>b0ae043cc9b01300777f27419cd8159b</sys_id>
+            <sys_created_by>muhlb</sys_created_by>
+            <sys_created_on>2018-04-05 14:39:15</sys_created_on>
+            <sys_id>c7e79b9dc1151300777fb2130d796653</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
-            <sys_updated_on>2018-03-09 14:11:29</sys_updated_on>
+            <sys_updated_by>muhlb</sys_updated_by>
+            <sys_updated_on>2018-04-05 14:39:15</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>operating_system</element>
-            <list_id display_value="x_terraform_snow_approved_amis" element="NULL" name="x_terraform_snow_approved_amis" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3cae043cc9b01300777f27419cd8159a</list_id>
+            <element>ami_name</element>
+            <list_id display_value="x_terraform_snow_approved_amis" element="NULL" name="x_terraform_snow_approved_amis" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">07e79b9dc1151300777fb2130d796608</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
-            <sys_created_by>adm.taylor.c.mulder</sys_created_by>
-            <sys_created_on>2018-03-09 14:11:29</sys_created_on>
-            <sys_id>34ae043cc9b01300777f27419cd8159b</sys_id>
+            <sys_created_by>muhlb</sys_created_by>
+            <sys_created_on>2018-04-05 14:39:15</sys_created_on>
+            <sys_id>4fe79b9dc1151300777fb2130d796653</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
-            <sys_updated_on>2018-03-09 14:11:29</sys_updated_on>
+            <sys_updated_by>muhlb</sys_updated_by>
+            <sys_updated_on>2018-04-05 14:39:15</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>os_version</element>
-            <list_id display_value="x_terraform_snow_approved_amis" element="NULL" name="x_terraform_snow_approved_amis" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3cae043cc9b01300777f27419cd8159a</list_id>
+            <element>creation_date</element>
+            <list_id display_value="x_terraform_snow_approved_amis" element="NULL" name="x_terraform_snow_approved_amis" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">07e79b9dc1151300777fb2130d796608</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
-            <sys_created_by>adm.taylor.c.mulder</sys_created_by>
-            <sys_created_on>2018-03-09 14:11:29</sys_created_on>
-            <sys_id>b4ae043cc9b01300777f27419cd8159b</sys_id>
+            <sys_created_by>muhlb</sys_created_by>
+            <sys_created_on>2018-04-05 14:39:15</sys_created_on>
+            <sys_id>cfe79b9dc1151300777fb2130d796653</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
-            <sys_updated_on>2018-03-09 14:11:29</sys_updated_on>
+            <sys_updated_by>muhlb</sys_updated_by>
+            <sys_updated_on>2018-04-05 14:39:15</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>region</element>
-            <list_id display_value="x_terraform_snow_approved_amis" element="NULL" name="x_terraform_snow_approved_amis" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3cae043cc9b01300777f27419cd8159a</list_id>
+            <element>operating_system</element>
+            <list_id display_value="x_terraform_snow_approved_amis" element="NULL" name="x_terraform_snow_approved_amis" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">07e79b9dc1151300777fb2130d796608</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
-            <sys_created_by>adm.taylor.c.mulder</sys_created_by>
-            <sys_created_on>2018-03-09 14:11:29</sys_created_on>
-            <sys_id>38ae043cc9b01300777f27419cd8159b</sys_id>
+            <sys_created_by>muhlb</sys_created_by>
+            <sys_created_on>2018-04-05 14:39:15</sys_created_on>
+            <sys_id>43e79b9dc1151300777fb2130d796654</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
-            <sys_updated_on>2018-03-09 14:11:29</sys_updated_on>
+            <sys_updated_by>muhlb</sys_updated_by>
+            <sys_updated_on>2018-04-05 14:39:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>os_version</element>
+            <list_id display_value="x_terraform_snow_approved_amis" element="NULL" name="x_terraform_snow_approved_amis" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">07e79b9dc1151300777fb2130d796608</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>muhlb</sys_created_by>
+            <sys_created_on>2018-04-05 14:39:15</sys_created_on>
+            <sys_id>c3e79b9dc1151300777fb2130d796654</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>muhlb</sys_updated_by>
+            <sys_updated_on>2018-04-05 14:39:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>region</element>
+            <list_id display_value="x_terraform_snow_approved_amis" element="NULL" name="x_terraform_snow_approved_amis" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">07e79b9dc1151300777fb2130d796608</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>muhlb</sys_created_by>
+            <sys_created_on>2018-04-05 14:39:15</sys_created_on>
+            <sys_id>47e79b9dc1151300777fb2130d796654</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>muhlb</sys_updated_by>
+            <sys_updated_on>2018-04-05 14:39:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>virtualizatio_type</element>
+            <list_id display_value="x_terraform_snow_approved_amis" element="NULL" name="x_terraform_snow_approved_amis" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">07e79b9dc1151300777fb2130d796608</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>muhlb</sys_created_by>
+            <sys_created_on>2018-04-05 14:39:15</sys_created_on>
+            <sys_id>c7e79b9dc1151300777fb2130d796654</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>muhlb</sys_updated_by>
+            <sys_updated_on>2018-04-05 14:39:15</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -78,11 +123,11 @@
             <sys_domain_path>/</sys_domain_path>
             <sys_id>c310d47cc9b01300777f27419cd8156f</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name/>
-            <sys_package/>
+            <sys_name>x_terraform_snow_approved_amis</sys_name>
+            <sys_package display_value="terraform-snow" source="x_terraform_snow">e4a2adf774241300777ff5c38bfe8185</sys_package>
             <sys_policy/>
             <sys_scope display_value="terraform-snow">e4a2adf774241300777ff5c38bfe8185</sys_scope>
-            <sys_update_name/>
+            <sys_update_name>sys_ui_list_x_terraform_snow_approved_amis_null</sys_update_name>
             <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
             <sys_updated_on>2018-03-09 14:17:55</sys_updated_on>
             <sys_user display_value="Taylor Mulder">1a33f4abdd441300777f0a273afe859d</sys_user>

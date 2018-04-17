@@ -27,6 +27,6 @@
         <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
         <sys_updated_on>2018-03-08 16:05:02</sys_updated_on>
         <upgrade_safe>false</upgrade_safe>
-        <workflow display_value="Create TF Catalogue Item">b18a971808f01300777f3caf10548e06</workflow>
+        <workflow display_value="">b18a971808f01300777f3caf10548e06</workflow>
     </wf_workflow_schedule>
 </record_update>

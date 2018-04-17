@@ -3,48 +3,153 @@
     <sys_ui_list parent="sc_cat_item" relationship="" sys_domain="global" table="item_option_new" version="2" view="advanced">
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>type</element>
-            <list_id display_value="item_option_new" element="NULL" name="item_option_new" parent="sc_cat_item" relationship="NULL" sys_domain="global" view="Default view">1cffd307fcf30300777f41edd87388c6</list_id>
+            <element>name</element>
+            <list_id display_value="item_option_new" element="NULL" name="item_option_new" parent="sc_cat_item" relationship="NULL" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">06cbaf078d891300777fcdb218774326</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
-            <sys_created_by>system</sys_created_by>
-            <sys_created_on>2018-01-26 12:09:29</sys_created_on>
-            <sys_id>9cffd307fcf30300777f41edd87388c6</sys_id>
+            <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+            <sys_created_on>2018-03-29 16:19:42</sys_created_on>
+            <sys_id>8ecbaf078d891300777fcdb218774326</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>system</sys_updated_by>
-            <sys_updated_on>2018-01-26 12:09:29</sys_updated_on>
+            <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+            <sys_updated_on>2018-03-29 16:19:42</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>question_text</element>
-            <list_id display_value="item_option_new" element="NULL" name="item_option_new" parent="sc_cat_item" relationship="NULL" sys_domain="global" view="Default view">1cffd307fcf30300777f41edd87388c6</list_id>
+            <element>active</element>
+            <list_id display_value="item_option_new" element="NULL" name="item_option_new" parent="sc_cat_item" relationship="NULL" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">06cbaf078d891300777fcdb218774326</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
-            <sys_created_by>system</sys_created_by>
-            <sys_created_on>2018-01-26 12:09:29</sys_created_on>
-            <sys_id>10ffd307fcf30300777f41edd87388c7</sys_id>
+            <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+            <sys_created_on>2018-03-29 16:19:42</sys_created_on>
+            <sys_id>06cbaf078d891300777fcdb218774327</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>system</sys_updated_by>
-            <sys_updated_on>2018-01-26 12:09:29</sys_updated_on>
+            <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+            <sys_updated_on>2018-03-29 16:19:42</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>order</element>
-            <list_id display_value="item_option_new" element="NULL" name="item_option_new" parent="sc_cat_item" relationship="NULL" sys_domain="global" view="Default view">1cffd307fcf30300777f41edd87388c6</list_id>
+            <element>attributes</element>
+            <list_id display_value="item_option_new" element="NULL" name="item_option_new" parent="sc_cat_item" relationship="NULL" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">06cbaf078d891300777fcdb218774326</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
-            <sys_created_by>system</sys_created_by>
-            <sys_created_on>2018-01-26 12:09:29</sys_created_on>
-            <sys_id>90ffd307fcf30300777f41edd87388c7</sys_id>
+            <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+            <sys_created_on>2018-03-29 16:19:42</sys_created_on>
+            <sys_id>86cbaf078d891300777fcdb218774327</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>system</sys_updated_by>
-            <sys_updated_on>2018-01-26 12:09:29</sys_updated_on>
+            <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+            <sys_updated_on>2018-03-29 16:19:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>cat_item</element>
+            <list_id display_value="item_option_new" element="NULL" name="item_option_new" parent="sc_cat_item" relationship="NULL" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">06cbaf078d891300777fcdb218774326</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+            <sys_created_on>2018-03-29 16:19:42</sys_created_on>
+            <sys_id>0acbaf078d891300777fcdb218774327</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+            <sys_updated_on>2018-03-29 16:19:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>category</element>
+            <list_id display_value="item_option_new" element="NULL" name="item_option_new" parent="sc_cat_item" relationship="NULL" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">06cbaf078d891300777fcdb218774326</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+            <sys_created_on>2018-03-29 16:19:42</sys_created_on>
+            <sys_id>8acbaf078d891300777fcdb218774327</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+            <sys_updated_on>2018-03-29 16:19:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>choice_direction</element>
+            <list_id display_value="item_option_new" element="NULL" name="item_option_new" parent="sc_cat_item" relationship="NULL" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">06cbaf078d891300777fcdb218774326</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+            <sys_created_on>2018-03-29 16:19:42</sys_created_on>
+            <sys_id>0ecbaf078d891300777fcdb218774327</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+            <sys_updated_on>2018-03-29 16:19:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>choice_field</element>
+            <list_id display_value="item_option_new" element="NULL" name="item_option_new" parent="sc_cat_item" relationship="NULL" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">06cbaf078d891300777fcdb218774326</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+            <sys_created_on>2018-03-29 16:19:42</sys_created_on>
+            <sys_id>8ecbaf078d891300777fcdb218774327</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+            <sys_updated_on>2018-03-29 16:19:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>choice_table</element>
+            <list_id display_value="item_option_new" element="NULL" name="item_option_new" parent="sc_cat_item" relationship="NULL" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">06cbaf078d891300777fcdb218774326</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+            <sys_created_on>2018-03-29 16:19:42</sys_created_on>
+            <sys_id>02cbaf078d891300777fcdb218774328</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+            <sys_updated_on>2018-03-29 16:19:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>create_roles</element>
+            <list_id display_value="item_option_new" element="NULL" name="item_option_new" parent="sc_cat_item" relationship="NULL" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">06cbaf078d891300777fcdb218774326</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+            <sys_created_on>2018-03-29 16:19:42</sys_created_on>
+            <sys_id>82cbaf078d891300777fcdb218774328</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+            <sys_updated_on>2018-03-29 16:19:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>default_html_value</element>
+            <list_id display_value="item_option_new" element="NULL" name="item_option_new" parent="sc_cat_item" relationship="NULL" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">06cbaf078d891300777fcdb218774326</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+            <sys_created_on>2018-03-29 16:19:42</sys_created_on>
+            <sys_id>06cbaf078d891300777fcdb218774328</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+            <sys_updated_on>2018-03-29 16:19:42</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -63,11 +168,11 @@
             <sys_domain_path>/</sys_domain_path>
             <sys_id>1e5f51fcc9b41300777f27419cd81595</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name/>
-            <sys_package/>
+            <sys_name>item_option_new</sys_name>
+            <sys_package display_value="terraform-snow" source="x_terraform_snow">e4a2adf774241300777ff5c38bfe8185</sys_package>
             <sys_policy/>
             <sys_scope display_value="terraform-snow">e4a2adf774241300777ff5c38bfe8185</sys_scope>
-            <sys_update_name/>
+            <sys_update_name>sys_ui_list_item_option_new_sc_cat_item_advanced</sys_update_name>
             <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
             <sys_updated_on>2018-03-09 20:04:06</sys_updated_on>
             <sys_user display_value="Taylor Mulder">1a33f4abdd441300777f0a273afe859d</sys_user>
