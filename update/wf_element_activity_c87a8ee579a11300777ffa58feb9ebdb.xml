@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="wf_element_activity">
+    <wf_element_activity action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <attributes/>
+        <base_provider display_value="SSH">ebee8be6d7022100dfc260affd610368</base_provider>
+        <category/>
+        <checked_out_by/>
+        <default_height/>
+        <default_width/>
+        <description/>
+        <image>images/heisenberg_icons/workflow_ie8/provider_ssh.png</image>
+        <input_meta>{"name":"Input","type":"DATA_OBJECT","properties":[{"name":"target_host","type":"STRING","mandatory":false},{"name":"working_dir","type":"STRING","mandatory":false},{"name":"target_role","type":"STRING","mandatory":false},{"name":"duration","type":"STRING","mandatory":false}]}</input_meta>
+        <input_process_script/>
+        <input_transform>{"source":"${activityInput.target_host}","command":"echo \"%%invoke_call%%\";\ncmdout=$(invoke get-aws-info \\\n--target-role='${activityInput.target_role}' \\\n--duration='${activityInput.duration}' \\\n) ;\necho \"$cmdout\"\nRETCODE=$?; \necho \"%%\"\necho \"%%return_code%%\";\necho $RETCODE;\necho \"%%","directory":"${activityInput.working_dir}","credential_tag":"terraform","midCapabilities":"2d20f2760a0006bc095bf17ae4e0d4ee","long_running":"false","must_sudo":"false"}</input_transform>
+        <local_variables/>
+        <name>Invoke get aws account info</name>
+        <output_meta>{"name":"Output","type":"DATA_OBJECT","properties":[{"name":"results","type":"STRING"}]}</output_meta>
+        <output_process_script/>
+        <output_transform>[{"toLink":"activityOutput.results","description":"","to":"results","toType":"string","toDestination":"activityOutput","sourceLabel":"executionResult.tags[\"invoke_call\"]","from":"${executionResult.tags[\"invoke_call\"]}","fromSource":"executionResult","type":"Direct","children":"[]","translation":""}]</output_transform>
+        <processing_script/>
+        <sample_payloads>{}</sample_payloads>
+        <short_description/>
+        <style/>
+        <sys_class_name>wf_element_activity</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-18 13:55:11</sys_created_on>
+        <sys_id>c87a8ee579a11300777ffa58feb9ebdb</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Invoke get aws account info</sys_name>
+        <sys_package display_value="terraform-snow" source="x_terraform_snow">e4a2adf774241300777ff5c38bfe8185</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="terraform-snow">e4a2adf774241300777ff5c38bfe8185</sys_scope>
+        <sys_update_name>wf_element_activity_c87a8ee579a11300777ffa58feb9ebdb</sys_update_name>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-18 13:57:10</sys_updated_on>
+        <version_container_id>488a0ee579a11300777ffa58feb9ebed</version_container_id>
+    </wf_element_activity>
+    <sys_translated_text action="delete_multiple" query="documentkey=c87a8ee579a11300777ffa58feb9ebdb"/>
+    <wf_versionable action="INSERT_OR_UPDATE">
+        <checked_out/>
+        <checked_out_by/>
+        <published>true</published>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-04-18 13:55:11</sys_created_on>
+        <sys_id>848a0ee579a11300777ffa58feb9ebee</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-04-18 13:57:10</sys_updated_on>
+        <valid_from>2018-04-18 13:57:10</valid_from>
+        <valid_to/>
+        <version>1</version>
+        <version_container_id>488a0ee579a11300777ffa58feb9ebed</version_container_id>
+        <wf_element_definition display_value="Invoke get aws account info">c87a8ee579a11300777ffa58feb9ebdb</wf_element_definition>
+    </wf_versionable>
+</record_update>
